@@ -35,7 +35,7 @@ jobs:
         with:
           cache: 'yarn'
       - name: Install dependencies
-        run: yarn ci
+        run: yarn
       - name: Build
         run: yarn vite build
       - name: Setup Pages
