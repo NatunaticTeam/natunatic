@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./assets/JetBrainsMono[wght].ttf');
+}
+
 :root {
-  font-family: 'JetBrains Mono Regular', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'JetBrains Mono', Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
