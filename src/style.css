@@ -93,42 +93,42 @@ h1 {
 }
 
 #n4c {
-  background-image: linear-gradient(160deg, #ff00ff99, #66336666);
+  background-image: linear-gradient(180deg, #ff00ff99, #66336666);
   border: 1px solid #ff00ff;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.3s;
 }
 
 #n4c:hover {
-  background-image: linear-gradient(160deg, #66336666, #ff00ff99);
+  background-image: linear-gradient(180deg, #66336666, #ff00ff99);
   border: 1px solid #ff99ff;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.3s;
 }
 
 #aaron {
-  background-image: linear-gradient(160deg, #ffffff99, #ffffff66);
-  border: 1px solid #ffffff;
+  background-image: linear-gradient(160deg, #22ff1166, #aaaa0099);
+  border: 1px solid #66ff7799;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.3s;
 }
 
 #aaron:hover {
-  background-image: linear-gradient(160deg, #ffffff66, #ffffff99);
-  border: 1px solid #ffffff;
+  background-image: linear-gradient(160deg, #aaaa0099, #22ff1166);
+  border: 1px solid #44ee8855;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.3s;
 }
 
 #julibros {
-  background-image: linear-gradient(160deg, #ff000099, #00000099);
+  background-image: linear-gradient(200deg, #ff000099, #00000099);
   border: 1px solid #ff0000;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.3s;
 }
 
 #julibros:hover {
-  background-image: linear-gradient(160deg, #00000099, #ff000099);
+  background-image: linear-gradient(200deg, #00000099, #ff000099);
   border: 1px solid #ff3333;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.3s;
