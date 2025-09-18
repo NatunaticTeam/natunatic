@@ -91,12 +91,13 @@ h1 {
 }
 
 .person:hover {
+  margin: -1em 1rem;
+  padding: -1em 1rem;
   text-align: center;
   border: 1px solid #444;
   border-radius: 3%;
   width: 325px;
-  height: 575px;
-  
+  height: 575px; 
 }
 
 .pfp {

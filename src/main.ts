@@ -45,8 +45,6 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
           </div>
           </div>
         <div id="pequeñoagradecimientojeje">
-          <div></div>
-          <p></p>
           <h6>gracias jean por revisar esta cosa fea <3</h6>
         </div>
       </div>
