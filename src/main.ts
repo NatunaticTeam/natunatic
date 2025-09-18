@@ -43,6 +43,11 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
             <p></p>
             <span class="member-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nibh erat, egestas eu diam sit amet, sollicitudin gravida tortor. Sed ac quam dignissim, consequat purus a, tristique justo. Nullam velit nunc, efficitur at risus nec, ultricies vestibulum turpis. Nam justo lacus, convallis et porta quis, eleifend sit amet sapien. Praesent sagittis convallis tortor et tempus. Duis vitae nulla fermentum odio porta tempus at sed mauris. Praesent ut volutpat tellus. In justo nisi, congue nec nisl eu, faucibus aliquam leo. Aliquam et ullamcorper enim. Nulla facilisi. Donec suscipit sed turpis vel efficitur. In hac habitasse platea dictumst. Sed eget orci quis.</span>
           </div>
+          </div>
+        <div id="pequeñoagradecimientojeje">
+          <div></div>
+          <p></p>
+          <h6>gracias jean por revisar esta cosa fea <3</h6>
         </div>
       </div>
     </div>

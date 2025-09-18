@@ -72,6 +72,10 @@ h1 {
   padding: 0.5rem 0;
 }
 
+#pequeñoagradecimientojeje {
+  color: #34343433;
+}
+
 #members {
   display: flex;
 }
@@ -157,6 +161,8 @@ h1 {
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
 
+
+/* animations*/
 @keyframes n4c-bg-in {
   0% { background-image: linear-gradient(180deg, #ff00ff99, #00000099) }
   1% { background-image: linear-gradient(180deg, #fe00fe99, #01000199) }
