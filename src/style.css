@@ -114,7 +114,7 @@ h1 {
 #n4c {
   animation: n4c-bg-out 1.3s;
   background-image: linear-gradient(180deg, #ff00ff99, #00000099);
-  border: 1px solid #ff00ff;
+  border: 1px solid #ff99ff;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
@@ -122,7 +122,7 @@ h1 {
 #n4c:hover {
   animation: n4c-bg-in 1.3s;
   background-image: linear-gradient(180deg, #00000099, #ff00ff99);
-  border: 1px solid #ff99ff;
+  border: 1px solid #ff00ff;
 
   transform: translateX(0px) translateY(-25px);
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
@@ -131,7 +131,7 @@ h1 {
 #aaron {
   animation: aaron-bg-out 1.3s;
   background-image: linear-gradient(160deg, #22ff1166, #00000099);
-  border: 1px solid #66ff7799;
+  border: 1px solid #55bb4466;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
@@ -139,16 +139,16 @@ h1 {
 #aaron:hover {
   animation: aaron-bg-in 1.3s;
   background-image: linear-gradient(160deg, #00000099, #22ff1166);
-  border: 1px solid #44ee8855;
+  border: 1px solid #22ff1166;
 
-  transform: translateX(25px) translateY(-25px);
+  transform: translateX(15px) translateY(-25px);
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
 
 #julibros {
   animation: julibros-bg-out 1.3s;
   background-image: linear-gradient(200deg, #ff000099, #00000099);
-  border: 1px solid #ff0000;
+  border: 1px solid #ff3333;
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
@@ -156,9 +156,9 @@ h1 {
 #julibros:hover {
   animation: julibros-bg-in 1.3s;
   background-image: linear-gradient(200deg, #00000099, #ff000099);
-  border: 1px solid #ff3333;
+  border: 1px solid #ff0000;
 
-  transform: translateX(-25px) translateY(-25px);
+  transform: translateX(-15px) translateY(-25px);
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
 
