@@ -44,6 +44,16 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  font-size: 1.8em;
+  line-height: 0.9;
+}
+
+h5 {
+  font-size: 0.6em;
+  line-height: 0.5;
+}
+
 #header {
   place-self: top;
   max-width: 1280px;
@@ -72,14 +82,63 @@ h1 {
   padding: 0.5rem 0;
 }
 
+
+/* header things */
+#header-nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+  justify-content: center;
+  background-color: #242424;
+}
+#header-nav a {
+  padding: 0 0.5rem;
+}
+#projects-button {
+  display: flex;
+}
+#projects-list {
+  list-style-type: none;
+  display: none;
+}
+#projects-button:hover + #projects-list {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  background-color: #242424;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0rem;
+}
+#projects-list:hover {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  background-color: #242424;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0rem;
+}
+.pjlist-element {
+  margin: 0.6rem 0.2rem;
+  padding: 0.2rem 0.7rem;
+}
+
+/* team section */
+#something1 {
+  color: #464646;
+}
 #pequeñoagradecimientojeje {
   color: #34343433;
 }
-
 #members {
   display: flex;
 }
-
 .person {
   margin: 0 1rem;
   padding: 0 1rem;
@@ -89,7 +148,6 @@ h1 {
   width: 300px;
   height: 550px;
 }
-
 .person:hover {
   margin: -1em 1rem;
   padding: -1em 1rem;
@@ -99,17 +157,16 @@ h1 {
   width: 325px;
   height: 575px; 
 }
-
 .pfp {
   padding-top: 10px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
-
 .member-desc {
   font: 10px 'JetBrains Mono Light', Avenir, Helvetica, Arial, sans-serif;
 }
+
 
 #n4c {
   animation: n4c-bg-out 1.3s;
@@ -118,7 +175,6 @@ h1 {
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
-
 #n4c:hover {
   animation: n4c-bg-in 1.3s;
   background-image: linear-gradient(180deg, #00000099, #ff00ff99);
@@ -127,7 +183,6 @@ h1 {
   transform: translateX(0px) translateY(-25px);
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
-
 #aaron {
   animation: aaron-bg-out 1.3s;
   background-image: linear-gradient(160deg, #22ff1166, #00000099);
@@ -135,7 +190,6 @@ h1 {
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
-
 #aaron:hover {
   animation: aaron-bg-in 1.3s;
   background-image: linear-gradient(160deg, #00000099, #22ff1166);
@@ -144,7 +198,6 @@ h1 {
   transform: translateX(15px) translateY(-25px);
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
-
 #julibros {
   animation: julibros-bg-out 1.3s;
   background-image: linear-gradient(200deg, #ff000099, #00000099);
@@ -152,7 +205,6 @@ h1 {
 
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
-
 #julibros:hover {
   animation: julibros-bg-in 1.3s;
   background-image: linear-gradient(200deg, #00000099, #ff000099);
@@ -161,6 +213,7 @@ h1 {
   transform: translateX(-15px) translateY(-25px);
   transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
 }
+
 
 
 /* animations*/
