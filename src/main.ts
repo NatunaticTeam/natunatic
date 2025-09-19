@@ -3,10 +3,23 @@ import n4cPfp from './assets/n4c.jpg'
 import julibrosPfp from './assets/julibros.jpg'
 import aaronPfp from './assets/aaron.jpg'
 
+var randomLink:any = Math.random()
+var choosenLink:string = "https://natunatic.com"
+
+if (randomLink > 0.5)
+{
+  choosenLink = "https://natunatic.com"
+}
+else
+{
+  choosenLink = "https://www.youtube.com/@NATUNATIC_Official"
+}
+console.log(choosenLink)
+
 document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
   <div>
     <div id="header-nav">
-      <a href="https://natunatic.com">natunatic.com</a>
+      <a href="${choosenLink}">natunatic.com</a>
       <span>/</span>
       <a href=".">index</a>
       <a href="./#team">team</a>
