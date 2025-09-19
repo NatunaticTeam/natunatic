@@ -10,9 +10,9 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
       <span>/</span>
       <a href=".">index</a>
       <a href="./#team">team</a>
-      <a>artbook</a>
+      <a href="artbook">artbook</a>
       <div>
-        <a id="projects-button">projects</a>
+        <a id="projects-button" href="projects">projects</a>
         <ul id="projects-list">
           <li><a class="pjlist-element">BounceRing</a></li>
           <li><a class="pjlist-element">Animal Tower</a></li>
@@ -21,7 +21,11 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
       </div>
     </div>
     <div id="content">
-      <h1>welcome to natunatic!</h1>
+  </div>
+`;
+
+document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
+  <h1>welcome to natunatic!</h1>
       <h5>page is still a very big wip but we finally decided to keep this design bc julibros really liked it</h5>
       <div class="spacing"></div>
       <div id="team">
@@ -123,5 +127,4 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
         </div>
       </div>
     </div>
-  </div>
 `;
