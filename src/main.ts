@@ -3,20 +3,29 @@ import n4cPfp from './assets/n4c.jpg'
 import julibrosPfp from './assets/julibros.jpg'
 import aaronPfp from './assets/aaron.jpg'
 
+const br = "BounceRing".toLowerCase();
+const at = "AnimalTower".toLowerCase();
+const iv = "Introverse".toLowerCase();
+const pt = "PvZPT".toLowerCase();
+const ca = "CandanceAdventure".toLowerCase();
+
 var randomLink:any = Math.random()
+console.debug(randomLink)
 var choosenLink:string = "https://natunatic.com"
 
 if (randomLink > 0.5)
 {
   choosenLink = "https://natunatic.com"
+  console.debug("natunatic webpage")
 }
 else
 {
+  console.debug("natunatic yt channel")
   choosenLink = "https://www.youtube.com/@NATUNATIC_Official"
 }
 console.log(choosenLink)
 
-document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
+document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
   <div>
     <div id="header-nav">
       <a href="${choosenLink}">natunatic.com</a>
@@ -27,9 +36,11 @@ document.querySelector<HTMLDivElement>('#header')!.innerHTML = `
       <div>
         <a id="projects-button" href="projects">projects</a>
         <ul id="projects-list">
-          <li><a class="pjlist-element">BounceRing</a></li>
-          <li><a class="pjlist-element">Animal Tower</a></li>
-          <li><a class="pjlist-element"></a></li>
+          <li><a class="pjlist-element" href="projects?game=${br}">BounceRing</a></li>
+          <li><a class="pjlist-element" href="projects?game=${at}">AnimalTower</a></li>
+          <li><a class="pjlist-element" href="projects?game=${iv}">Introverse</a></li>
+          <li><a class="pjlist-element" href="projects?game=${pt}">PvZ P.T!</a></li>
+          <li><a class="pjlist-element" href="projects?game=${ca}">Candance</a></li>
         </ul>
       </div>
     </div>
@@ -57,29 +68,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
             <span class="member-roles">sprites, music and some animations</span>
             <p></p>
             <span class="member-desc">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Integer nibh erat, 
-            egestas eu diam sit amet,
-            sollicitudin gravida tortor.
-            Sed ac quam dignissim,
-            consequat purus a,
-            tristique justo. 
-            Nullam velit nunc, 
-            efficitur at risus nec, 
-            ultricies vestibulum turpis. 
-            Nam justo lacus, convallis et porta quis, 
-            eleifend sit amet sapien. 
-            Praesent sagittis convallis tortor et tempus. 
-            Duis vitae nulla fermentum odio porta tempus at sed mauris. 
-            Praesent ut volutpat tellus. 
-            In justo nisi, congue nec nisl eu, 
-            faucibus aliquam leo. 
-            Aliquam et ullamcorper enim. 
-            Nulla facilisi. 
-            Donec suscipit sed turpis vel efficitur. 
-            In hac habitasse platea dictumst. 
-            Sed eget orci quis.
+              lazy guy doesnt wanna do his desc
             </span>
           </div>
           <div class="person" id="n4c" onclick="window.location.href='https://www.youtube.com/@n4c-n'">
@@ -109,29 +98,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
             <span class="member-roles">frontend programmer (not yet), animator, sprites</span>
             <p></p>
             <span class="member-desc">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Integer nibh erat, 
-            egestas eu diam sit amet,
-            sollicitudin gravida tortor.
-            Sed ac quam dignissim,
-            consequat purus a,
-            tristique justo. 
-            Nullam velit nunc, 
-            efficitur at risus nec, 
-            ultricies vestibulum turpis. 
-            Nam justo lacus, convallis et porta quis, 
-            eleifend sit amet sapien. 
-            Praesent sagittis convallis tortor et tempus. 
-            Duis vitae nulla fermentum odio porta tempus at sed mauris. 
-            Praesent ut volutpat tellus. 
-            In justo nisi, congue nec nisl eu, 
-            faucibus aliquam leo. 
-            Aliquam et ullamcorper enim. 
-            Nulla facilisi. 
-            Donec suscipit sed turpis vel efficitur. 
-            In hac habitasse platea dictumst. 
-            Sed eget orci quis.
+            lazy guy doesnt wanna do his desc
             </span>
             </div>
         </div>
@@ -141,3 +108,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
       </div>
     </div>
 `;
+
+export default {
+  br, at, iv, pt, ca
+}

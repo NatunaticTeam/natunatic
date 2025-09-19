@@ -5,3 +5,14 @@
   padding: 2rem;
   text-align: center;
 }
+
+.card {
+  display: block;
+  position: absolute;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  margin: 0 1rem;
+  padding: 0 1rem;
+  width: 6.3cm;
+  height: 8.8cm;
+}
