@@ -44,6 +44,7 @@
   animation: fadein2 0.3s;
   border: 6px solid #000000;
   border-radius: 15px;
+  background-image: url("../assets/placeholderCard.png");
   margin: 0 1rem;
   padding: 0 1rem;
   width: 6.3cm;
@@ -69,11 +70,33 @@
   display: flex;
   justify-content: right;
   margin-top: -1.67rem;
+  color: #000000;
 }
 .cardLang {
   animation: fadein3 0.3s;
   display: flex;
+  color: #000000;
   margin-top: 17rem;
+}
+.lang-logo {
+  animation: fadein4 0.3s;
+  margin-left: 1.6rem;
+  margin-top: -1.35rem;
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+#gml-lang-logo {
+  margin-left: 2rem;
+}
+#haxe-lang-logo {
+  margin-left: 2.5rem;
+}
+#cpp-lang-logo {
+  margin-left: 1.9rem;
+}
+#luau-lang-logo {
+  margin-left: 2.5rem;
 }
 #bouncering {
   background-color: #aaffff;
@@ -90,24 +113,19 @@
 #pvzptcardName {
   margin-top: -1.5rem;
   font-size: 13px;
-  color: #000000;
 }
 #candancecardName {
   margin-top: -1.4rem;
   font-size: 12px;
-  color: #000000;
 }
 #introversecardName {
   margin-right: 1rem;
-  color: #000000;
 }
 #animaltowercardName {
   margin-right: 0.5rem;
-  color: #000000;
 }
 #bounceringcardName {
   margin-right: 1rem;
-  color: #000000;
 }
 #candance {
   background-color: #ff9900;
@@ -153,4 +171,8 @@
 @keyframes fadein3 {
   0% { color: #000000; }
   100% { color: none; }
+}
+@keyframes fadein4 {
+  0% { opacity: 0%; }
+  100% { opacity: 100%; }
 }

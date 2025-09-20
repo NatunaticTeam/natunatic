@@ -1,4 +1,9 @@
 import './styles/projects.css'
+import csharpLogo from './assets/csharp.svg'
+import gmlLogo from './assets/gml.png'
+import haxeLogo from './assets/haxe.svg'
+import cppLogo from './assets/cpp.svg'
+import luauLogo from './assets/luau.svg'
 import mainPage from './main'
 //#region some checkers ig
 const urlParams = new URLSearchParams(window.location.search);
@@ -32,27 +37,42 @@ const defaultContent = `
     <div id="cards">
         <div id="bouncering" class="card">
             <div class="upperCard">
-                <span class="cardType">Game</span> <span class="cardName" id="bounceringcardName">BounceRing</span> <span class="cardLang">csharp</span>
+                <span class="cardType">Game</span>
+                <span class="cardName" id="bounceringcardName">BounceRing</span>
+                <span class="cardLang">C#</span>
+                <img src="${csharpLogo}" class="lang-logo"/>
             </div>
         </div>
         <div id="animaltower" class="card" onclick="">
             <div class="upperCard">
-                <span class="cardType">Game</span> <span class="cardName" id="animaltowercardName">Animal Tower</span> <span class="cardLang">gml</span>
+                <span class="cardType">Game</span>
+                <span class="cardName" id="animaltowercardName">Animal Tower</span>
+                <span class="cardLang">GML</span>
+                <img src="${gmlLogo}" class="lang-logo" id="gml-lang-logo"/>
             </div>
         </div>
         <div id="introverse" class="card" onclick="">
             <div class="upperCard">
-                <span class="cardType">Mod</span> <span class="cardName" id="introversecardName">Introverse</span> <span class="cardLang">Haxe</span>
+                <span class="cardType">Mod</span>
+                <span class="cardName" id="introversecardName">Introverse</span>
+                <span class="cardLang">Haxe</span>
+                <img src="${haxeLogo}" class="lang-logo" id="haxe-lang-logo"/>
             </div>
         </div>
         <div id="pvzmod" class="card" onclick="">
             <div class="upperCard">
-                <span class="cardType">Mod</span> <span class="cardName" id="pvzptcardName">PvZ: Pizza Time!</span> <span class="cardLang">c++</span>
+                <span class="cardType">Mod</span>
+                <span class="cardName" id="pvzptcardName">PvZ: Pizza Time!</span>
+                <span class="cardLang">C++</span>
+                <img src="${cppLogo}" class="lang-logo" id="cpp-lang-logo"/>
             </div>
         </div>
         <div id="candance" class="card" onclick="">
             <div class="upperCard">
-                <span class="cardType">Game</span> <span class="cardName" id="candancecardName">Candance Adventure</span> <span class="cardLang">Luau</span>
+                <span class="cardType">Game</span>
+                <span class="cardName" id="candancecardName">Candance Adventure</span>
+                <span class="cardLang">Luau</span>
+                <img src="${luauLogo}" class="lang-logo" id="luau-lang-logo"/>
             </div>
         </div>
     </div>
