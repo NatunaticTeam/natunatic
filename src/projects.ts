@@ -1,6 +1,6 @@
 import './styles/projects.css'
 import mainPage from './main'
-
+//#region some checkers ig
 const urlParams = new URLSearchParams(window.location.search);
 const game = urlParams.get('game');
 
@@ -12,28 +12,53 @@ else
 {
     console.debug("no game")
 }
+//#endregion
 
+//#region functions and stuf
+function delay(ms:number) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 
-const defaultContent = /*`
-    <div>
-        <div id="bouncering" class="card"></div>
-        <div id="animaltower" class="card"></div>
-        <div id="introverse" class="card"></div>
-        <div id="pvzmod" class="card"></div>
-        <div id="candance" class="card"></div>
+async function chooseNewPage(page:string) {
+    console.debug("asynchronously waiting")
+    await delay(2000)
+    location.href = "?game="+page;
+}
+//#endregion
+//#region contents
+const defaultContent = `
+<div>
+    <div id="curtain"></div>
+    <div id="cards">
+        <div id="bouncering" class="card">
+            <div class="upperCard">
+                <span class="cardType">Game</span> <span class="cardName" id="bounceringcardName">BounceRing</span> <span class="cardLang">csharp</span>
+            </div>
+        </div>
+        <div id="animaltower" class="card" onclick="">
+            <div class="upperCard">
+                <span class="cardType">Game</span> <span class="cardName" id="animaltowercardName">Animal Tower</span> <span class="cardLang">gml</span>
+            </div>
+        </div>
+        <div id="introverse" class="card" onclick="">
+            <div class="upperCard">
+                <span class="cardType">Mod</span> <span class="cardName" id="introversecardName">Introverse</span> <span class="cardLang">Haxe</span>
+            </div>
+        </div>
+        <div id="pvzmod" class="card" onclick="">
+            <div class="upperCard">
+                <span class="cardType">Mod</span> <span class="cardName" id="pvzptcardName">PvZ: Pizza Time!</span> <span class="cardLang">c++</span>
+            </div>
+        </div>
+        <div id="candance" class="card" onclick="">
+            <div class="upperCard">
+                <span class="cardType">Game</span> <span class="cardName" id="candancecardName">Candance Adventure</span> <span class="cardLang">Luau</span>
+            </div>
+        </div>
     </div>
-`;*/
-`
-    <div>
-        <h1>nothing</h1>
-        <h5>did this merely for testing, still a wip</h5>
-        <a class="pjlist-element" href="projects?game=${mainPage.br}">BounceRing</a>
-        <a class="pjlist-element" href="projects?game=${mainPage.at}">Animal Tower</a>
-        <a class="pjlist-element" href="projects?game=${mainPage.iv}">Introverse</a>
-        <a class="pjlist-element" href="projects?game=${mainPage.pt}">PvZ: Pizza Time!</a>
-        <a class="pjlist-element" href="projects?game=${mainPage.ca}">Candance Adventure</a>
-    </div>
+</div>
 `;
+
 const bounceringContent = `
     <div>
         <h1>bouncering</h1>
@@ -44,6 +69,7 @@ const bounceringContent = `
         <a class="pjlist-element" href="projects?game=${mainPage.ca}">Candance Adventure</a>
     </div>
 `;
+
 const animaltowerContent = `
     <div>
         <h1>animaltower</h1>
@@ -54,6 +80,7 @@ const animaltowerContent = `
         <a class="pjlist-element" href="projects?game=${mainPage.ca}">Candance Adventure</a>
     </div>
 `;
+
 const introverseContent = `
     <div>
         <h1>introverse</h1>
@@ -64,6 +91,7 @@ const introverseContent = `
         <a class="pjlist-element" href="projects?game=${mainPage.ca}">Candance Adventure</a>
     </div>
 `;
+
 const pvzptContent = `
     <div>
         <h1>pvzpt</h1>
@@ -74,6 +102,7 @@ const pvzptContent = `
         <a class="pjlist-element" href="projects?game=${mainPage.ca}">Candance Adventure</a>
     </div>
 `;
+
 const candanceContent = `
     <div>
         <h1>candance</h1>
@@ -84,7 +113,12 @@ const candanceContent = `
         <a class="pjlist-element" href="projects?game=${mainPage.pt}">PvZ: Pizza Time!</a>
     </div>
 `;
+//#endregion
 
+
+
+// content switcher
+// works by checking the "game" var and switching per result, if !game then load default projects page
 switch (game) {
     case "bouncering": {
         console.debug(`content chosen: bouncering`);
@@ -112,8 +146,85 @@ switch (game) {
         break;
     }
     default:
-        console.debug("no content chosen, default instead")
+        console.debug("invalid/no content chosen, default instead")
         document.querySelector<HTMLDivElement>('#content')!.innerHTML = defaultContent;
         break;
 }
-        
+
+//#region grabbing some elements from html
+const rootelement = document.documentElement
+const curtainDiv = document.getElementById('curtain') as HTMLDivElement
+const bounceringCard = document.getElementById('bouncering') as HTMLDivElement
+const animaltowerCard = document.getElementById('animaltower') as HTMLDivElement
+const introverseCard = document.getElementById('introverse') as HTMLDivElement
+const pvzptCard = document.getElementById('pvzmod') as HTMLDivElement
+const candanceCard = document.getElementById('candance') as HTMLDivElement
+//#endregion
+
+//#region eventlisteners
+bounceringCard.addEventListener('click', () => {
+    console.debug("clicked bouncering");
+    chooseNewPage('bouncering');
+    rootelement.style.overflow = "hidden";
+    bounceringCard.style.animation = "scaleCard 5s";
+    curtainDiv.style.display = "flex";
+    curtainDiv.style.animation = "fadeout 2.2s";
+    curtainDiv.style.margin = "-9.45rem -40rem";
+    animaltowerCard.style.display = "none";
+    introverseCard.style.display = "none";
+    pvzptCard.style.display = "none";
+    candanceCard.style.display = "none";
+})
+animaltowerCard.addEventListener('click', () => {
+    console.debug("clicked animaltower");
+    chooseNewPage('animaltower');
+    rootelement.style.overflow = "hidden";
+    animaltowerCard.style.animation = "scaleCard 5s";
+    curtainDiv.style.display = "flex";
+    curtainDiv.style.animation = "fadeout 2.2s";
+    curtainDiv.style.margin = "-9.45rem -40rem";
+    bounceringCard.style.display = "none";
+    introverseCard.style.display = "none";
+    pvzptCard.style.display = "none";
+    candanceCard.style.display = "none";
+})
+introverseCard.addEventListener('click', () => {
+    console.debug("clicked introverse");
+    chooseNewPage('introverse');
+    rootelement.style.overflow = "hidden";
+    introverseCard.style.animation = "scaleCard 5s";
+    curtainDiv.style.display = "flex";
+    curtainDiv.style.animation = "fadeout 2.2s";
+    curtainDiv.style.margin = "-9.45rem -40rem";
+    animaltowerCard.style.display = "none";
+    bounceringCard.style.display = "none";
+    pvzptCard.style.display = "none";
+    candanceCard.style.display = "none";
+})
+pvzptCard.addEventListener('click', () => {
+    console.debug("clicked pvzmod");
+    chooseNewPage('pvzpt');
+    rootelement.style.overflow = "hidden";
+    pvzptCard.style.animation = "scaleCard 5s";
+    curtainDiv.style.display = "flex";
+    curtainDiv.style.animation = "fadeout 2.2s";
+    curtainDiv.style.margin = "-9.45rem -40rem";
+    animaltowerCard.style.display = "none";
+    introverseCard.style.display = "none";
+    bounceringCard.style.display = "none";
+    candanceCard.style.display = "none";
+})
+candanceCard.addEventListener('click', () => {
+    console.debug("clicked candance");
+    chooseNewPage('candanceadventure');
+    rootelement.style.overflow = "hidden";
+    candanceCard.style.animation = "scaleCard 5s";
+    curtainDiv.style.display = "flex";
+    curtainDiv.style.animation = "fadeout 2.2s";
+    curtainDiv.style.margin = "-9.45rem -40rem";
+    animaltowerCard.style.display = "none";
+    introverseCard.style.display = "none";
+    pvzptCard.style.display = "none";
+    bounceringCard.style.display = "none";
+})
+//#endregion
