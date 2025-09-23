@@ -53,6 +53,8 @@
   transition: all cubic-bezier(0.23, 1, 0.320, 1) 0.5s;
 }
 .card:hover {
+  margin: 0rem 3rem;
+  padding: 0rem 1rem;
   transform: translateY(-25px) scale(1.1, 1.1);
 }
 .cardType {
@@ -146,6 +148,20 @@
   cursor: pointer;
 }
 
+#ididntthinkaboutthenameofthis {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+#tuff {
+  width: 3rem;
+  height: 3rem;
+  border: solid 1px groove #000000;
+}
+
+
+
+/* animations */
 @keyframes scaleCard {
   0% {}
   20% { transform: translateY(40px); }
@@ -158,6 +174,12 @@
   0% { opacity: 0%; }
   80% { opacity: 1%; }
   100% { opacity: 100%; }
+}
+
+@keyframes fadeout2 {
+  0% { opacity: 0%; }
+  80% { opacity: 1%; }
+  100% { opacity: 100%; display: none; }
 }
 
 @keyframes fadein {

@@ -64,7 +64,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
         <div class="small-spacing"></div>
         <div id="members">
           <div class="person" id="julibros" onclick="window.location.href='https://www.youtube.com/@Julibros'">
-            <img src="${julibrosPfp}" alt="n4c" class="pfp"/>
+            <img src="https://yt3.googleusercontent.com/7JKyQh4oumdOajuJWY0ADyCu_nPZfkrzZs7fusHPV2-zkCJ6mpP7u-vFxBXMemwS7xSwnYKt=s160-c-k-c0x00ffffff-no-rj" alt="n4c" class="pfp"/>
             <p></p>
             <span class="member-name">Julibros</span>
             <p></p>
@@ -75,7 +75,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
             </span>
           </div>
           <div class="person" id="n4c" onclick="window.location.href='https://www.youtube.com/@n4c-n'">
-            <img src="${n4cPfp}" alt="n4c" class="pfp"/>
+            <img src="https://yt3.googleusercontent.com/1qE7CfOk4pRJMXAqBy8BaVWeUDL3Z__vhtyhoEyX80E_qUHt5oOD0VwS8R3b1f1vmB6q3Vkz=s160-c-k-c0x00ffffff-no-rj" alt="n4c" class="pfp"/>
             <p></p>
             <span class="member-name">n4c</span>
             <p></p>
@@ -94,7 +94,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
             </span>
           </div>
           <div class="person" id="aaron" onclick="window.location.href='https://www.youtube.com/@Elmisterio123xd'">
-            <img src="${aaronPfp}" alt="n4c" class="pfp"/>
+            <img src="https://yt3.googleusercontent.com/MwMib2f-QoKLiguzYLLDqVgqU9pgTBcYY43nSJLepSldVe9rrt3e6lmhHSb3fDCGkYWJOV4q8A=s160-c-k-c0x00ffffff-no-rj" alt="n4c" class="pfp"/>
             <p></p>
             <span class="member-name">Elmisterio123x</span>
             <p></p>

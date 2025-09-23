@@ -1,9 +1,10 @@
-import './styles/projects.css'
+import './styles/projects.css' // imports ig
 import csharpLogo from './assets/csharp.svg'
 import gmlLogo from './assets/gml.png'
 import haxeLogo from './assets/haxe.svg'
 import cppLogo from './assets/cpp.svg'
 import luauLogo from './assets/luau.svg'
+import mango67 from './assets/kendrick-kendrick-lamar.png'
 import mainPage from './main'
 //#region some checkers ig
 const urlParams = new URLSearchParams(window.location.search);
@@ -19,21 +20,27 @@ else
 }
 //#endregion
 
-//#region functions and stuf
-function delay(ms:number) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+//#region some things
+const randomChoice1:number = Math.random()
+console.debug(randomChoice1)
+var text1:string = 'Pick One'
+if (randomChoice1 <= 0.1)
+{
+    text1 = `MUSTARD MANGO 67 BOIIII THIS IS SO TUFF <img src="${mango67}" id="tuff" alt="MUSTARD">`
 }
-
-async function chooseNewPage(page:string) {
-    console.debug("asynchronously waiting")
-    await delay(2000)
-    location.href = "?game="+page;
+else
+{
+    text1 = 'Pick one'
 }
 //#endregion
+
 //#region contents
 const defaultContent = `
 <div>
     <div id="curtain"></div>
+    <div id="ididntthinkaboutthenameofthis">
+        <span>${text1}</span>
+    </div>
     <div id="cards">
         <div id="bouncering" class="card">
             <div class="upperCard">
@@ -179,17 +186,31 @@ const animaltowerCard = document.getElementById('animaltower') as HTMLDivElement
 const introverseCard = document.getElementById('introverse') as HTMLDivElement
 const pvzptCard = document.getElementById('pvzmod') as HTMLDivElement
 const candanceCard = document.getElementById('candance') as HTMLDivElement
+const a_text = document.getElementById('ididntthinkaboutthenameofthis') as HTMLDivElement
 //#endregion
 
+//#region functions and stuf
+function delay(ms:number) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+    
+async function chooseNewPage(page:string) {
+    console.debug("asynchronously waiting")
+    rootelement.style.overflow = "hidden";
+    a_text.style.display = "none";
+    curtainDiv.style.display = "flex";
+    curtainDiv.style.animation = "fadeout 2.2s";
+    curtainDiv.style.margin = "-9.45rem -40rem";
+    await delay(2000)
+    location.href = "?game="+page;
+}
+//#endregion
+    
 //#region eventlisteners
 bounceringCard.addEventListener('click', () => {
     console.debug("clicked bouncering");
     chooseNewPage('bouncering');
-    rootelement.style.overflow = "hidden";
     bounceringCard.style.animation = "scaleCard 5s";
-    curtainDiv.style.display = "flex";
-    curtainDiv.style.animation = "fadeout 2.2s";
-    curtainDiv.style.margin = "-9.45rem -40rem";
     animaltowerCard.style.display = "none";
     introverseCard.style.display = "none";
     pvzptCard.style.display = "none";
@@ -198,11 +219,7 @@ bounceringCard.addEventListener('click', () => {
 animaltowerCard.addEventListener('click', () => {
     console.debug("clicked animaltower");
     chooseNewPage('animaltower');
-    rootelement.style.overflow = "hidden";
     animaltowerCard.style.animation = "scaleCard 5s";
-    curtainDiv.style.display = "flex";
-    curtainDiv.style.animation = "fadeout 2.2s";
-    curtainDiv.style.margin = "-9.45rem -40rem";
     bounceringCard.style.display = "none";
     introverseCard.style.display = "none";
     pvzptCard.style.display = "none";
@@ -211,11 +228,7 @@ animaltowerCard.addEventListener('click', () => {
 introverseCard.addEventListener('click', () => {
     console.debug("clicked introverse");
     chooseNewPage('introverse');
-    rootelement.style.overflow = "hidden";
     introverseCard.style.animation = "scaleCard 5s";
-    curtainDiv.style.display = "flex";
-    curtainDiv.style.animation = "fadeout 2.2s";
-    curtainDiv.style.margin = "-9.45rem -40rem";
     animaltowerCard.style.display = "none";
     bounceringCard.style.display = "none";
     pvzptCard.style.display = "none";
@@ -224,11 +237,7 @@ introverseCard.addEventListener('click', () => {
 pvzptCard.addEventListener('click', () => {
     console.debug("clicked pvzmod");
     chooseNewPage('pvzpt');
-    rootelement.style.overflow = "hidden";
     pvzptCard.style.animation = "scaleCard 5s";
-    curtainDiv.style.display = "flex";
-    curtainDiv.style.animation = "fadeout 2.2s";
-    curtainDiv.style.margin = "-9.45rem -40rem";
     animaltowerCard.style.display = "none";
     introverseCard.style.display = "none";
     bounceringCard.style.display = "none";
@@ -237,11 +246,7 @@ pvzptCard.addEventListener('click', () => {
 candanceCard.addEventListener('click', () => {
     console.debug("clicked candance");
     chooseNewPage('candanceadventure');
-    rootelement.style.overflow = "hidden";
     candanceCard.style.animation = "scaleCard 5s";
-    curtainDiv.style.display = "flex";
-    curtainDiv.style.animation = "fadeout 2.2s";
-    curtainDiv.style.margin = "-9.45rem -40rem";
     animaltowerCard.style.display = "none";
     introverseCard.style.display = "none";
     pvzptCard.style.display = "none";
