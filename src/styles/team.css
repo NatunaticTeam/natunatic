@@ -1,0 +1,378 @@
+#something1 {
+  color: #464646;
+}
+#pequeñoagradecimientojeje {
+  color: #34343433;
+}
+#members {
+  display: flex;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.person {
+  margin: 0 1rem;
+  padding: 0 1rem;
+  text-align: center;
+  border: 0.01rem solid #444;
+  border-radius: 5%;
+  width: 18.8rem;
+  height: 34rem;
+}
+.person:hover {
+  margin: -1em 1rem;
+  padding: -1em 1rem;
+  text-align: center;
+  border: 0.01rem solid #444;
+  border-radius: 3%;
+  width: 20.2rem;
+  height: 35rem; 
+}
+.small-person {
+  animation: generic-bg-out 1.3s;
+  background-image: linear-gradient(0deg, #999999ff, #000000ff);
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  text-align: center;
+  border: 0.01rem solid #eee;
+  border-radius: 7%;
+  width: 10rem;
+  height: 11rem;
+
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+.small-person:hover {
+  animation: generic-bg-in 1.3s;
+  background-image: linear-gradient(0deg, #000000ff, #999999ff);
+  border: 0.01rem solid #444;
+
+  transform: scale(1.1);
+}
+.pfp {
+  padding-top: 10px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+.member-desc {
+  font: 10px 'JetBrains Mono Light', Avenir, Helvetica, Arial, sans-serif;
+}
+#special-thanks {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#special-thanks-persons {
+  display: flex;
+}
+
+#n4c {
+  animation: n4c-bg-out 1.3s;
+  background-image: linear-gradient(180deg, #ff00ff99, #00000099);
+  border: 1px solid #ff99ff;
+
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
+}
+#n4c:hover {
+  animation: n4c-bg-in 1.3s;
+  background-image: linear-gradient(180deg, #00000099, #ff00ff99);
+  border: 1px solid #ff00ff;
+
+  transform: translateX(0px) translateY(-25px);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
+}
+#aaron {
+  animation: aaron-bg-out 1.3s;
+  background-image: linear-gradient(160deg, #22ff1166, #00000099);
+  border: 1px solid #55bb4466;
+
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
+}
+#aaron:hover {
+  animation: aaron-bg-in 1.3s;
+  background-image: linear-gradient(160deg, #00000099, #22ff1166);
+  border: 1px solid #22ff1166;
+
+  transform: translateX(15px) translateY(-25px);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
+}
+#julibros {
+  animation: julibros-bg-out 1.3s;
+  background-image: linear-gradient(200deg, #ff000099, #00000099);
+  border: 1px solid #ff3333;
+
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
+}
+#julibros:hover {
+  animation: julibros-bg-in 1.3s;
+  background-image: linear-gradient(200deg, #00000099, #ff000099);
+  border: 1px solid #ff0000;
+
+  transform: translateX(-15px) translateY(-25px);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1) 0.7s;
+}
+
+
+
+/* animations*/
+@keyframes n4c-bg-in {
+  0% { background-image: linear-gradient(180deg, #ff00ff99, #00000099) }
+  1% { background-image: linear-gradient(180deg, #fe00fe99, #01000199) }
+  2% { background-image: linear-gradient(180deg, #fd00fd99, #02000299) }
+  3% { background-image: linear-gradient(180deg, #fc00fc99, #03000399) }
+  4% { background-image: linear-gradient(180deg, #fb00fb99, #04000499) }
+  5% { background-image: linear-gradient(180deg, #fa00fa99, #05000599) }
+  6% { background-image: linear-gradient(180deg, #ea00ea99, #06000699) }
+  7% { background-image: linear-gradient(180deg, #da00da99, #07000799) }
+  8% { background-image: linear-gradient(180deg, #ca00ca99, #08000899) }
+  9% { background-image: linear-gradient(180deg, #ba00ba99, #09000999) }
+  10% { background-image: linear-gradient(180deg, #aa00aa99, #0a000a99) }
+  11% { background-image: linear-gradient(180deg, #9a009a99, #0b000b99) }
+  12% { background-image: linear-gradient(180deg, #8a008a99, #0c000c99) }
+  13% { background-image: linear-gradient(180deg, #7a007a99, #0d000d99) }
+  14% { background-image: linear-gradient(180deg, #6a006a99, #0e000e99) }
+  15% { background-image: linear-gradient(180deg, #5a005a99, #0f000f99) }
+  16% { background-image: linear-gradient(180deg, #4a004a99, #1f001f99) }
+  17% { background-image: linear-gradient(180deg, #3a003a99, #2f002f99) }
+  18% { background-image: linear-gradient(180deg, #2a002a99, #3f003f99) }
+  19% { background-image: linear-gradient(180deg, #1a001a99, #4f004f99) }
+  20% { background-image: linear-gradient(180deg, #0a000a99, #5f005f99) }
+  21% { background-image: linear-gradient(180deg, #09000999, #6f006f99) }
+  22% { background-image: linear-gradient(180deg, #08000899, #7f007f99) }
+  23% { background-image: linear-gradient(180deg, #07000799, #8f008f99) }
+  24% { background-image: linear-gradient(180deg, #06000699, #9f009f99) }
+  25% { background-image: linear-gradient(180deg, #05000599, #af00af99) }
+  26% { background-image: linear-gradient(180deg, #04000499, #bf00bf99) }
+  27% { background-image: linear-gradient(180deg, #03000399, #cf00cf99) }
+  28% { background-image: linear-gradient(180deg, #02000299, #df00df99) }
+  29% { background-image: linear-gradient(180deg, #01000199, #ef00ef99) }
+  30% { background-image: linear-gradient(180deg, #00000099, #ff00ff99) }
+  100% { background-image: linear-gradient(180deg, #00000099, #ff00ff99) }
+}
+
+@keyframes n4c-bg-out {
+  100% { background-image: linear-gradient(180deg, #ff00ff99, #00000099) }
+  30% { background-image: linear-gradient(180deg, #fe00fe99, #01000199) }
+  29% { background-image: linear-gradient(180deg, #fd00fd99, #02000299) }
+  28% { background-image: linear-gradient(180deg, #fc00fc99, #03000399) }
+  27% { background-image: linear-gradient(180deg, #fb00fb99, #04000499) }
+  26% { background-image: linear-gradient(180deg, #fa00fa99, #05000599) }
+  25% { background-image: linear-gradient(180deg, #ea00ea99, #06000699) }
+  24% { background-image: linear-gradient(180deg, #da00da99, #07000799) }
+  23% { background-image: linear-gradient(180deg, #ca00ca99, #08000899) }
+  22% { background-image: linear-gradient(180deg, #ba00ba99, #09000999) }
+  21% { background-image: linear-gradient(180deg, #aa00aa99, #0a000a99) }
+  20% { background-image: linear-gradient(180deg, #9a009a99, #0b000b99) }
+  19% { background-image: linear-gradient(180deg, #8a008a99, #0c000c99) }
+  18% { background-image: linear-gradient(180deg, #7a007a99, #0d000d99) }
+  17% { background-image: linear-gradient(180deg, #6a006a99, #0e000e99) }
+  16% { background-image: linear-gradient(180deg, #5a005a99, #0f000f99) }
+  15% { background-image: linear-gradient(180deg, #4a004a99, #1f001f99) }
+  14% { background-image: linear-gradient(180deg, #3a003a99, #2f002f99) }
+  13% { background-image: linear-gradient(180deg, #2a002a99, #3f003f99) }
+  12% { background-image: linear-gradient(180deg, #1a001a99, #4f004f99) }
+  11% { background-image: linear-gradient(180deg, #0a000a99, #5f005f99) }
+  10% { background-image: linear-gradient(180deg, #09000999, #6f006f99) }
+  9% { background-image: linear-gradient(180deg, #08000899, #7f007f99) }
+  8% { background-image: linear-gradient(180deg, #07000799, #8f008f99) }
+  7% { background-image: linear-gradient(180deg, #06000699, #9f009f99) }
+  6% { background-image: linear-gradient(180deg, #05000599, #af00af99) }
+  5% { background-image: linear-gradient(180deg, #04000499, #bf00bf99) }
+  4% { background-image: linear-gradient(180deg, #03000399, #cf00cf99) }
+  3% { background-image: linear-gradient(180deg, #02000299, #df00df99) }
+  2% { background-image: linear-gradient(180deg, #01000199, #ef00ef99) }
+  1% { background-image: linear-gradient(180deg, #00000099, #ff00ff99) }
+  0% { background-image: linear-gradient(180deg, #00000099, #ff00ff99) }
+}
+
+@keyframes julibros-bg-in {
+  0% { background-image: linear-gradient(200deg, #ff000099, #00000099) }
+  1% { background-image: linear-gradient(200deg, #fe000099, #01000099) }
+  2% { background-image: linear-gradient(200deg, #fd000099, #02000099) }
+  3% { background-image: linear-gradient(200deg, #fc000099, #03000099) }
+  4% { background-image: linear-gradient(200deg, #fb000099, #04000099) }
+  5% { background-image: linear-gradient(200deg, #fa000099, #05000099) }
+  6% { background-image: linear-gradient(200deg, #ea000099, #06000099) }
+  7% { background-image: linear-gradient(200deg, #da000099, #07000099) }
+  8% { background-image: linear-gradient(200deg, #ca000099, #08000099) }
+  9% { background-image: linear-gradient(200deg, #ba000099, #09000099) }
+  10% { background-image: linear-gradient(200deg, #aa000099, #0a000099) }
+  11% { background-image: linear-gradient(200deg, #9a000099, #0b000099) }
+  12% { background-image: linear-gradient(200deg, #8a000099, #0c000099) }
+  13% { background-image: linear-gradient(200deg, #7a000099, #0d000099) }
+  14% { background-image: linear-gradient(200deg, #6a000099, #0e000099) }
+  15% { background-image: linear-gradient(200deg, #5a000099, #0f000099) }
+  16% { background-image: linear-gradient(200deg, #4a000099, #1f000099) }
+  17% { background-image: linear-gradient(200deg, #3a000099, #2f000099) }
+  18% { background-image: linear-gradient(200deg, #2a000099, #3f000099) }
+  19% { background-image: linear-gradient(200deg, #1a000099, #4f000099) }
+  20% { background-image: linear-gradient(200deg, #0a000099, #5f000099) }
+  21% { background-image: linear-gradient(200deg, #09000099, #6f000099) }
+  22% { background-image: linear-gradient(200deg, #08000099, #7f000099) }
+  23% { background-image: linear-gradient(200deg, #07000099, #8f000099) }
+  24% { background-image: linear-gradient(200deg, #06000099, #9f000099) }
+  25% { background-image: linear-gradient(200deg, #05000099, #af000099) }
+  26% { background-image: linear-gradient(200deg, #04000099, #bf000099) }
+  27% { background-image: linear-gradient(200deg, #03000099, #cf000099) }
+  28% { background-image: linear-gradient(200deg, #02000099, #df000099) }
+  29% { background-image: linear-gradient(200deg, #01000099, #ef000099) }
+  30% { background-image: linear-gradient(200deg, #00000099, #ff000099) }
+  100% { background-image: linear-gradient(200deg, #00000099, #ff000099) }
+}
+
+@keyframes julibros-bg-out {
+  100% { background-image: linear-gradient(200deg, #ff000099, #00000099) }
+  30% { background-image: linear-gradient(200deg, #fe000099, #01000099) }
+  29% { background-image: linear-gradient(200deg, #fd000099, #02000099) }
+  28% { background-image: linear-gradient(200deg, #fc000099, #03000099) }
+  27% { background-image: linear-gradient(200deg, #fb000099, #04000099) }
+  26% { background-image: linear-gradient(200deg, #fa000099, #05000099) }
+  25% { background-image: linear-gradient(200deg, #ea000099, #06000099) }
+  24% { background-image: linear-gradient(200deg, #da000099, #07000099) }
+  23% { background-image: linear-gradient(200deg, #ca000099, #08000099) }
+  22% { background-image: linear-gradient(200deg, #ba000099, #09000099) }
+  21% { background-image: linear-gradient(200deg, #aa000099, #0a000099) }
+  20% { background-image: linear-gradient(200deg, #9a000099, #0b000099) }
+  19% { background-image: linear-gradient(200deg, #8a000099, #0c000099) }
+  18% { background-image: linear-gradient(200deg, #7a000099, #0d000099) }
+  17% { background-image: linear-gradient(200deg, #6a000099, #0e000099) }
+  16% { background-image: linear-gradient(200deg, #5a000099, #0f000099) }
+  15% { background-image: linear-gradient(200deg, #4a000099, #1f000099) }
+  14% { background-image: linear-gradient(200deg, #3a000099, #2f000099) }
+  13% { background-image: linear-gradient(200deg, #2a000099, #3f000099) }
+  12% { background-image: linear-gradient(200deg, #1a000099, #4f000099) }
+  11% { background-image: linear-gradient(200deg, #0a000099, #5f000099) }
+  10% { background-image: linear-gradient(200deg, #09000099, #6f000099) }
+  9% { background-image: linear-gradient(200deg, #08000099, #7f000099) }
+  8% { background-image: linear-gradient(200deg, #07000099, #8f000099) }
+  7% { background-image: linear-gradient(200deg, #06000099, #9f000099) }
+  6% { background-image: linear-gradient(200deg, #05000099, #af000099) }
+  5% { background-image: linear-gradient(200deg, #04000099, #bf000099) }
+  4% { background-image: linear-gradient(200deg, #03000099, #cf000099) }
+  3% { background-image: linear-gradient(200deg, #02000099, #df000099) }
+  2% { background-image: linear-gradient(200deg, #01000099, #ef000099) }
+  1% { background-image: linear-gradient(200deg, #00000099, #ff000099) }
+  0% { background-image: linear-gradient(200deg, #00000099, #ff000099) }
+}
+
+@keyframes aaron-bg-in {
+  0% { background-image: linear-gradient(160deg, #22ff1166, #00000066) }
+  1% { background-image: linear-gradient(160deg, #23ff1266, #00110166) }
+  2% { background-image: linear-gradient(160deg, #24ff1366, #00220266) }
+  3% { background-image: linear-gradient(160deg, #25ff1466, #00330366) }
+  4% { background-image: linear-gradient(160deg, #26ff1566, #00440466) }
+  5% { background-image: linear-gradient(160deg, #27ff1666, #00550566) }
+  6% { background-image: linear-gradient(160deg, #28ff1766, #00660666) }
+  7% { background-image: linear-gradient(160deg, #29ff1866, #00770766) }
+  8% { background-image: linear-gradient(160deg, #30ff1966, #00880866) }
+  9% { background-image: linear-gradient(160deg, #40ff2066, #00990966) }
+  10% { background-image: linear-gradient(160deg, #50ff3066, #00aa0a66) }
+  11% { background-image: linear-gradient(160deg, #60ff4066, #00bb0b66) }
+  12% { background-image: linear-gradient(160deg, #70ff5066, #00cc0c66) }
+  13% { background-image: linear-gradient(160deg, #80ff6066, #00dd0066) }
+  14% { background-image: linear-gradient(160deg, #90ff7066, #00ee9066) }
+  15% { background-image: linear-gradient(160deg, #00ff8066, #00ff8066) }
+  16% { background-image: linear-gradient(160deg, #00ee9066, #90ff7066) }
+  17% { background-image: linear-gradient(160deg, #00dd0066, #80ff6066) }
+  18% { background-image: linear-gradient(160deg, #00cc0066, #70ff5066) }
+  19% { background-image: linear-gradient(160deg, #00bb0066, #60ff4066) }
+  20% { background-image: linear-gradient(160deg, #00aa0066, #50ff3066) }
+  21% { background-image: linear-gradient(160deg, #00990066, #40ff2066) }
+  22% { background-image: linear-gradient(160deg, #00880066, #30ff1966) }
+  23% { background-image: linear-gradient(160deg, #00770066, #29ff1866) }
+  24% { background-image: linear-gradient(160deg, #00660066, #28ff1766) }
+  25% { background-image: linear-gradient(160deg, #00550066, #27ff1666) }
+  26% { background-image: linear-gradient(160deg, #00440066, #26ff1566) }
+  27% { background-image: linear-gradient(160deg, #00330066, #25ff1466) }
+  28% { background-image: linear-gradient(160deg, #00220066, #24ff1366) }
+  29% { background-image: linear-gradient(160deg, #00110066, #23ff1266) }
+  30% { background-image: linear-gradient(160deg, #00000066, #22ff1166) }
+  100% { background-image: linear-gradient(160deg, #00000066, #22ff1166) }
+}
+
+@keyframes aaron-bg-out {
+  100% { background-image: linear-gradient(160deg, #22ff1166, #00000066) }
+  30% { background-image: linear-gradient(160deg, #23ff1266, #00110166) }
+  29% { background-image: linear-gradient(160deg, #24ff1366, #00220266) }
+  28% { background-image: linear-gradient(160deg, #25ff1466, #00330366) }
+  27% { background-image: linear-gradient(160deg, #26ff1566, #00440466) }
+  26% { background-image: linear-gradient(160deg, #27ff1666, #00550566) }
+  25% { background-image: linear-gradient(160deg, #28ff1766, #00660666) }
+  24% { background-image: linear-gradient(160deg, #29ff1866, #00770766) }
+  23% { background-image: linear-gradient(160deg, #30ff1966, #00880866) }
+  22% { background-image: linear-gradient(160deg, #40ff2066, #00990966) }
+  21% { background-image: linear-gradient(160deg, #50ff3066, #00aa0a66) }
+  20% { background-image: linear-gradient(160deg, #60ff4066, #00bb0b66) }
+  19% { background-image: linear-gradient(160deg, #70ff5066, #00cc0c66) }
+  18% { background-image: linear-gradient(160deg, #80ff6066, #00dd0066) }
+  17% { background-image: linear-gradient(160deg, #90ff7066, #00ee9066) }
+  16% { background-image: linear-gradient(160deg, #00ff8066, #00ff8066) }
+  15% { background-image: linear-gradient(160deg, #00ee9066, #90ff7066) }
+  14% { background-image: linear-gradient(160deg, #00dd0066, #80ff6066) }
+  13% { background-image: linear-gradient(160deg, #00cc0066, #70ff5066) }
+  12% { background-image: linear-gradient(160deg, #00bb0066, #60ff4066) }
+  11% { background-image: linear-gradient(160deg, #00aa0066, #50ff3066) }
+  10% { background-image: linear-gradient(160deg, #00990066, #40ff2066) }
+  9% { background-image: linear-gradient(160deg, #00880066, #30ff1966) }
+  8% { background-image: linear-gradient(160deg, #00770066, #29ff1866) }
+  7% { background-image: linear-gradient(160deg, #00660066, #28ff1766) }
+  6% { background-image: linear-gradient(160deg, #00550066, #27ff1666) }
+  5% { background-image: linear-gradient(160deg, #00440066, #26ff1566) }
+  4% { background-image: linear-gradient(160deg, #00330066, #25ff1466) }
+  3% { background-image: linear-gradient(160deg, #00220066, #24ff1366) }
+  2% { background-image: linear-gradient(160deg, #00110066, #23ff1266) }
+  1% { background-image: linear-gradient(160deg, #00000066, #22ff1166) }
+  0% { background-image: linear-gradient(160deg, #00000066, #22ff1166) }
+}
+
+@keyframes generic-bg-out {
+  0% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
+  1% { background-image: linear-gradient(0deg, #111111ff, #888888ff) }
+  2% { background-image: linear-gradient(0deg, #111111ff, #888888ff) }
+  3% { background-image: linear-gradient(0deg, #222222ff, #777777ff) }
+  4% { background-image: linear-gradient(0deg, #222222ff, #777777ff) }
+  5% { background-image: linear-gradient(0deg, #333333ff, #666666ff) }
+  6% { background-image: linear-gradient(0deg, #333333ff, #666666ff) }
+  7% { background-image: linear-gradient(0deg, #444444ff, #555555ff) }
+  8% { background-image: linear-gradient(0deg, #444444ff, #555555ff) }
+  9% { background-image: linear-gradient(0deg, #555555ff, #444444ff) }
+  10% { background-image: linear-gradient(0deg, #555555ff, #444444ff) }
+  11% { background-image: linear-gradient(0deg, #666666ff, #333333ff) }
+  12% { background-image: linear-gradient(0deg, #666666ff, #333333ff) }
+  13% { background-image: linear-gradient(0deg, #777777ff, #222222ff) }
+  14% { background-image: linear-gradient(0deg, #777777ff, #222222ff) }
+  15% { background-image: linear-gradient(0deg, #888888ff, #111111ff) }
+  16% { background-image: linear-gradient(0deg, #888888ff, #111111ff) }
+  17% { background-image: linear-gradient(0deg, #999999ff, #000000ff) }
+  18% { background-image: linear-gradient(0deg, #999999ff, #000000ff) }
+  100% { background-image: linear-gradient(0deg, #999999ff, #000000ff) }
+}
+
+@keyframes generic-bg-in {
+  100% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
+  18% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
+  17% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
+  16% { background-image: linear-gradient(0deg, #111111ff, #888888ff) }
+  15% { background-image: linear-gradient(0deg, #111111ff, #888888ff) }
+  14% { background-image: linear-gradient(0deg, #222222ff, #777777ff) }
+  13% { background-image: linear-gradient(0deg, #222222ff, #777777ff) }
+  12% { background-image: linear-gradient(0deg, #333333ff, #666666ff) }
+  11% { background-image: linear-gradient(0deg, #333333ff, #666666ff) }
+  10% { background-image: linear-gradient(0deg, #444444ff, #555555ff) }
+  9% { background-image: linear-gradient(0deg, #444444ff, #555555ff) }
+  8% { background-image: linear-gradient(0deg, #555555ff, #444444ff) }
+  7% { background-image: linear-gradient(0deg, #555555ff, #444444ff) }
+  6% { background-image: linear-gradient(0deg, #666666ff, #333333ff) }
+  5% { background-image: linear-gradient(0deg, #666666ff, #333333ff) }
+  4% { background-image: linear-gradient(0deg, #777777ff, #222222ff) }
+  3% { background-image: linear-gradient(0deg, #777777ff, #222222ff) }
+  2% { background-image: linear-gradient(0deg, #888888ff, #111111ff) }
+  1% { background-image: linear-gradient(0deg, #888888ff, #111111ff) }
+  0% { background-image: linear-gradient(0deg, #999999ff, #000000ff) }
+}
