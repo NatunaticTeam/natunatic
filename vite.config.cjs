@@ -1,7 +1,8 @@
 /** @type {import('vite').UserConfig} */
-import resolve from 'path'
+import resolve from 'path';
+const { defineConfig } = require('vite')
 
-export default {
+module.exports = defineConfig({
     build: {
         rollupOptions: {
             input: {
@@ -10,5 +11,5 @@ export default {
                 projects: resolve.resolve(__dirname, 'projects.html')
             }
         }
-    }
-}
+    },
+})

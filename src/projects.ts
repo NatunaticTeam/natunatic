@@ -24,7 +24,7 @@ else
 const randomChoice1:number = Math.random()
 console.debug(randomChoice1)
 var text1:string = 'Pick One'
-if (randomChoice1 <= 0.1)
+if (randomChoice1 < 0.1)
 {
     text1 = `MUSTARD MANGO 67 BOIIII THIS IS SO TUFF <img src="${mango67}" id="tuff" alt="MUSTARD">`
 }
@@ -145,7 +145,7 @@ const candanceContent = `
 
 
 // content switcher
-// works by checking the "game" var and switching per result, if !game then load default projects page
+// works by checking the "game" var and switching by result, if !game then load default projects page
 switch (game) {
     case "bouncering": {
         console.debug(`content chosen: bouncering`);
@@ -178,7 +178,7 @@ switch (game) {
         break;
 }
 
-//#region grabbing some elements from html
+//#region getting some elements from html
 const rootelement = document.documentElement
 const curtainDiv = document.getElementById('curtain') as HTMLDivElement
 const bounceringCard = document.getElementById('bouncering') as HTMLDivElement
@@ -189,7 +189,7 @@ const candanceCard = document.getElementById('candance') as HTMLDivElement
 const a_text = document.getElementById('ididntthinkaboutthenameofthis') as HTMLDivElement
 //#endregion
 
-//#region functions and stuf
+//#region functions and stuff
 function delay(ms:number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }

@@ -1,14 +1,17 @@
-import './style.css'
-import './styles/team.css'
-import n4cPfp from './assets/n4c.jpg'
-import julibrosPfp from './assets/julibros.jpg'
-import aaronPfp from './assets/aaron.jpg'
+import './style.css';
+import './styles/team.css';
+import _n4cPfp from './assets/n4c.jpg';
+import _julibrosPfp from './assets/julibros.jpg';
+import _aaronPfp from './assets/aaron.jpg';
+import i18n from './localization';
 
-const br = "BounceRing".toLowerCase();
-const at = "AnimalTower".toLowerCase();
-const iv = "Introverse".toLowerCase();
-const pt = "PvZPT".toLowerCase();
-const ca = "CandanceAdventure".toLowerCase();
+//#region sum extra shit
+const br:string = "BounceRing".toLowerCase();
+const at:string = "AnimalTower".toLowerCase();
+const iv:string = "Introverse".toLowerCase();
+const pt:string = "PvZPT".toLowerCase();
+const ca:string = "CandanceAdventure".toLowerCase();
+document.cookie = "lang=en";
 
 var randomLink:number = Math.random()
 var randomTitle:number = Math.random()
@@ -27,6 +30,8 @@ else
   choosenLink = "https://www.youtube.com/@NATUNATIC_Official"
 }
 console.debug(choosenLink)
+//#endregion
+
 
 
 document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
@@ -34,17 +39,25 @@ document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
     <div id="header-nav">
       <a href="${choosenLink}">natunatic.com</a>
       <span>/</span>
-      <a href=".">index</a>
-      <a href="./#team">team</a>
-      <a href="artbook">artbook</a>
+      <a href=".">${i18n.t('header.index')}</a>
+      <a href="./#team">${i18n.t('header.team')}</a>
+      <a href="artbook">${i18n.t('header.artbook')}</a>
       <div>
-        <a id="projects-button" href="projects">projects</a>
+        <a id="projects-button" href="projects">${i18n.t('header.projects')}</a>
         <ul id="projects-list">
           <li><a class="pjlist-element" href="projects?game=${br}">BounceRing</a></li>
-          <li><a class="pjlist-element" href="projects?game=${at}" onclick="">AnimalTower</a></li>
+          <li><a class="pjlist-element" href="projects?game=${at}">AnimalTower</a></li>
           <li><a class="pjlist-element" href="projects?game=${iv}">Introverse</a></li>
           <li><a class="pjlist-element" href="projects?game=${pt}">PvZ P.T!</a></li>
           <li><a class="pjlist-element" href="projects?game=${ca}">Candance</a></li>
+        </ul>
+      </div>
+      <div>
+        <a id="languages-button">${i18n.t('header.languages')}</a>
+        <ul id="languages-list">
+          <li><a class="langlist-element" id="lang-en">${i18n.t('header.language-list.en')}</a></li>
+          <li><a class="langlist-element" id="lang-es">${i18n.t('header.language-list.es')}</a></li>
+          <li><a class="langlist-element" id="lang-escl">${i18n.t('header.language-list.es-CL')}</a></li>
         </ul>
       </div>
     </div>
@@ -53,15 +66,15 @@ document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
 `;
 
 document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
-  <h1>welcome to natunatic!</h1>
-  <h5>page is still a very big wip but we finally decided to keep this design bc julibros really liked it</h5>
+  <h1>${i18n.t('main-page.welcome')}</h1>
+  <h5>${i18n.t('main-page.welcome-desc')}</h5>
   <div class="spacing"></div>
     <div id="team">
       <div class="small-spacing"></div>
       <div class="small-spacing"></div>
-      <h2>of course we present ourselves appropiately</h2>
-      <h3>team is composed of mainly 3 persons and their friends, and possibly contributors from many sources</h3>
-      <h5 id="something1">the cards are clickables and the descriptions are written from our own perspectives btw</h5>
+      <h2>${i18n.t('main-page.sure')}</h2>
+      <h3>${i18n.t('main-page.team-d')}</h3>
+      <h5 id="something1">${i18n.t('main-page.advice-click')}</h5>
       <div class="small-spacing"></div>
       <div id="members">
         <div class="person" id="julibros" onclick="window.location.href='https://www.youtube.com/@Julibros'">
@@ -69,65 +82,41 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
           <p></p>
           <span class="member-name">Julibros</span>
           <p></p>
-          <span class="member-roles">sprites, music and some animations</span>
+          <span class="member-roles">${i18n.t('main-page.julibros-roles')}</span>
           <p></p>
-          <span class="member-desc">
-            lazy guy doesnt wanna do his desc
-          </span>
+          <span class="member-desc">${i18n.t('main-page.julibros-desc')}</span>
         </div>
         <div class="person" id="n4c" onclick="window.location.href='https://www.youtube.com/@n4c-n'">
           <img src="https://yt3.googleusercontent.com/1qE7CfOk4pRJMXAqBy8BaVWeUDL3Z__vhtyhoEyX80E_qUHt5oOD0VwS8R3b1f1vmB6q3Vkz=s160-c-k-c0x00ffffff-no-rj" alt="n4c" class="pfp"/>
           <p></p>
           <span class="member-name">n4c</span>
           <p></p>
-          <span class="member-roles">lead programmer, lazy ass animator and sfx maker</span>
+          <span class="member-roles">${i18n.t('main-page.n4c-roles')}</span>
           <p></p>
-          <span class="member-desc">
-            "could say im a chill guy, very good at work but lazy, im a fat###,
-            i love cats (specially milo, the one on my pfp) and i like rpgs and fighting games in general,
-            i like anything that my ears like and im usually very introverted and unsociable,
-            if i like you then im sticking around you as much as i can
-            and i dont really like sports but i enjoy basketball,
-            im a project moon enthusiast and poser (yes im admiting it i dont get whats wrong) and i like photography,
-            thats pretty much it for me,
-            i could add something more but i will run out of space or it will be too empty so im not trying for now
-            (i did it didnt i? doesnt matter, its not like i didnt want to lol)"
-          </span>
+          <span class="member-desc">${i18n.t('main-page.n4c-desc')}</span>
         </div>
         <div class="person" id="aaron" onclick="window.location.href='https://www.youtube.com/@Elmisterio123xd'">
           <img src="https://yt3.googleusercontent.com/MwMib2f-QoKLiguzYLLDqVgqU9pgTBcYY43nSJLepSldVe9rrt3e6lmhHSb3fDCGkYWJOV4q8A=s160-c-k-c0x00ffffff-no-rj" alt="n4c" class="pfp"/>
           <p></p>
           <span class="member-name">Elmisterio123x</span>
           <p></p>
-          <span class="member-roles">frontend programmer (not yet), animator, sprites</span>
+          <span class="member-roles">${i18n.t('main-page.aaron-roles')}</span>
           <p></p>
-          <span class="member-desc">
-            "im a sonic fan, i like drawing
-            and i help people when i can without expecting anything in exchange,
-            i like exotic[butters] animals like hedgehogs and bunnies and
-            i like mental stability."
-            n4c-s pov as a filler: pretty chill guy, likes pretty good things
-            and is a very good friend of ours, has a lot of animals and is a sega enjoyer,
-            not just sonic, has a lot of funko pops but haves a barely functional pc
-            and enjoys rock, this guy also owns a ukulele (knows how to play it very good),
-            pretty cool guy but kinda dumb sometimes, but does lots of cool things,
-            we tryna get him to be a composer and producer but doesnt want too
-            because he doesnt know how to supposedly lol
-          </span>
+          <span class="member-desc">${i18n.t('main-page.aaron-desc')}</span>
           </div>
         </div>
         <div id="special-thanks">
-          <h3>special thanks to people that didnt necessarily collaborate or something, but we appreciate:</h3>
+          <h3>${i18n.t('main-page.special-thx')}</h3>
           <div id="special-thanks-persons">
             <div class="small-person">
               <span class="member-name">jean</span>
               <p></p>
               <span class="member-desc">
-                jeany beany
+                ${i18n.t('main-page.jeanl1')}
                 <div></div>
-                umm yeah he cool, complimented the thing above this
+                ${i18n.t('main-page.jeanl2')}, ${i18n.t('main-page.jeanl3')}, ${i18n.t('main-page.jeanl4')}
                 <div></div>
-                love you twin -n4c
+                ${i18n.t('main-page.jeanl5')}
               </span>
             </div>
             <div class="small-person hidden">
@@ -143,6 +132,34 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
       </div>
     </div>
 `;
+
+const esLangBtn = document.getElementById('lang-es') as HTMLAnchorElement;
+const esCLangBtn = document.getElementById('lang-escl') as HTMLAnchorElement;
+const enLangBtn = document.getElementById('lang-en') as HTMLAnchorElement;
+
+esLangBtn.addEventListener('click', () => {
+  i18n.changeLanguage('es').then(() => {
+    document.cookie = "lang=es";
+    console.debug(document.cookie);
+    location.reload();
+  });
+});
+
+esCLangBtn.addEventListener('click', () => {
+  i18n.changeLanguage('es_CL').then(() => {
+    document.cookie = "lang=es_CL";
+    console.debug(document.cookie);
+    location.reload();
+  });
+});
+
+enLangBtn.addEventListener('click', () => {
+  i18n.changeLanguage('en').then(() => {
+    document.cookie = "lang=en";
+    console.debug(document.cookie);
+    location.reload();
+  });
+});
 
 export default {
   br, at, iv, pt, ca
