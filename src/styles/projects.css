@@ -147,6 +147,9 @@
 #candance:hover {
   cursor: pointer;
 }
+#candance:hover + #candancecardName {
+  font-size: 10px;
+}
 
 #ididntthinkaboutthenameofthis {
   font-size: 2rem;

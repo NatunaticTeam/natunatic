@@ -28,5 +28,11 @@
         "jeanl3": "elogia mis weas",
         "jeanl4": "<div></div>cmo la de ahi",
         "jeanl5": "tqm ermano -n4c"
+    },
+    "artbook": {
+        "wip": "artbook is still a wip!",
+        "texty1": "as previously said this page is a very big work in progress",
+        "texty2": "but artbook is coming as soon as we get some things working on the server side of this page ;)",
+        "sog-text":"have a wide soggy instead"
     }
 }

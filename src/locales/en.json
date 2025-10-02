@@ -20,7 +20,7 @@
         "n4c-roles": "lead programmer, lazy ass animator and sfx maker",
         "n4c-desc": "\"could say im a chill guy, very good at work but lazy, im a fat###, i love cats (specially milo, the one on my pfp) and i like rpgs and fighting games in general, i like anything that my ears like and im usually very introverted and unsociable, if i like you then im sticking around you as much as i can and i dont really like sports but i enjoy basketball, im a project moon enthusiast and poser (yes im admiting it i dont get whats wrong) and i like photography, thats pretty much it for me, i could add something more but i will run out of space or it will be too empty so im not trying for now (i did it didnt i? doesnt matter, its not like i didnt want to lol)\"",
         "julibros-roles": "sprites, music and some animations",
-        "julibros-desc": "\"basically a really creative guy that got the idea of producing games, and thanks to my friends an family that got into a dream come true, as my friends say im the \"leader\" so i give the ideas and general designs on the team, and make the youtube videos and stories too of course, i also make covers for fun and im trying to \"learn\" how to produce original tracks.\" n4c's observation: pretty cool but lazy guy, does his job but like 3 weeks after i requested it and is very helpful too, icl this guy can make sick beats but is way too lazy to do em, go follow the natunatic channel to show him support please, it would help us all, not just julibros.",
+        "julibros-desc": "\"basically a really creative guy that got the idea of producing games, and thanks to my friends an family that got into a dream come true, as my friends say im the \"leader\" so i give the ideas and general designs on the team, and make the youtube videos and stories too of course, i also make covers for fun and im trying to \"learn\" how to produce original tracks.\" n4c's pov as a filler: pretty cool but lazy guy, does his job but like 3 weeks after i requested it and is very helpful too, icl this guy can make sick beats but is way too lazy to do em, go follow the natunatic channel to show him support please, it would help us all, not just julibros.",
         "aaron-roles": "frontend programmer (not yet), animator, sprites",
         "aaron-desc": "\"im a sonic fan, i like drawing and i help people when i can without expecting anything in exchange, i like exotic[butters] animals like hedgehogs and bunnies and i like mental stability.\"\nn4c-s pov as a filler: pretty chill guy, likes pretty good things and is a very good friend of ours, has a lot of animals and is a sega enjoyer, not just sonic, has a lot of funko pops but haves a barely functional pc and enjoys rock, this guy also owns a ukulele (knows how to play it very good), pretty cool guy but kinda dumb sometimes, but does lots of cool things, we tryna get him to be a composer and producer but doesnt want too because he doesnt know how to supposedly lol",
         "special-thx": "special thanks to people that didnt necessarily collaborate or something, but we appreciate:",
@@ -29,5 +29,14 @@
         "jeanl3": "complimented the thing",
         "jeanl4": "above this",
         "jeanl5": "love you twin -n4c"
+    },
+    "artbook": {
+        "wip": "artbook is still a wip!",
+        "texty1": "as previously said this page is a very big work in progress",
+        "texty2": "but artbook is coming as soon as we get some things working on the server side of this page ;)",
+        "sog-text":"have a wide soggy instead"
+    },
+    "projects": {
+        "textpick": "Pick one"
     }
 }

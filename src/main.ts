@@ -33,7 +33,7 @@ console.debug(choosenLink)
 //#endregion
 
 
-
+// add this later: <li><a class="langlist-element" id="lang-escl">${i18n.t('header.language-list.es-CL')}</a></li>
 document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
   <div>
     <div id="header-nav">
@@ -57,7 +57,6 @@ document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
         <ul id="languages-list">
           <li><a class="langlist-element" id="lang-en">${i18n.t('header.language-list.en')}</a></li>
           <li><a class="langlist-element" id="lang-es">${i18n.t('header.language-list.es')}</a></li>
-          <li><a class="langlist-element" id="lang-escl">${i18n.t('header.language-list.es-CL')}</a></li>
         </ul>
       </div>
     </div>
@@ -145,14 +144,6 @@ esLangBtn.addEventListener('click', () => {
   });
 });
 
-esCLangBtn.addEventListener('click', () => {
-  i18n.changeLanguage('es_CL').then(() => {
-    document.cookie = "lang=es_CL";
-    console.debug(document.cookie);
-    location.reload();
-  });
-});
-
 enLangBtn.addEventListener('click', () => {
   i18n.changeLanguage('en').then(() => {
     document.cookie = "lang=en";
@@ -160,6 +151,15 @@ enLangBtn.addEventListener('click', () => {
     location.reload();
   });
 });
+/*
+esCLangBtn.addEventListener('click', () => {
+  i18n.changeLanguage('es_CL').then(() => {
+    document.cookie = "lang=es_CL";
+    console.debug(document.cookie);
+    location.reload();
+  });
+});
+*/
 
 export default {
   br, at, iv, pt, ca

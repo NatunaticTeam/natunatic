@@ -1,11 +1,12 @@
 import './styles/projects.css' // imports ig
 import csharpLogo from './assets/csharp.svg'
-import gmlLogo from './assets/gml.png'
+import gmlLogo from './assets/gml.svg'
 import haxeLogo from './assets/haxe.svg'
 import cppLogo from './assets/cpp.svg'
 import luauLogo from './assets/luau.svg'
-import mango67 from './assets/kendrick-kendrick-lamar.png'
+import mango67 from './assets/mango67.png'
 import mainPage from './main'
+import i18n from './localization';
 //#region some checkers ig
 const urlParams = new URLSearchParams(window.location.search);
 const game = urlParams.get('game');
@@ -30,7 +31,7 @@ if (randomChoice1 < 0.1)
 }
 else
 {
-    text1 = 'Pick one'
+    text1 = `${i18n.t('projects.textpick')}`;
 }
 //#endregion
 

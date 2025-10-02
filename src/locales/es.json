@@ -18,9 +18,9 @@
         "team-d": "el equipo esta compuesto por 3 entes principales y sus amigos, mas contribuidores de muchos lugares",
         "advice-click": "las tarjetas son clickeables y las descripciones estan escritas desde nuestros puntos de vista propios",
         "n4c-roles": "programmer principal, animador y creador de sfx",
-        "n4c-desc": "\"could say im a chill guy, very good at work but lazy, im a fat###, i love cats (specially milo, the one on my pfp) and i like rpgs and fighting games in general, i like anything that my ears like and im usually very introverted and unsociable, if i like you then im sticking around you as much as i can and i dont really like sports but i enjoy basketball, im a project moon enthusiast and poser (yes im admiting it i dont get whats wrong) and i like photography, thats pretty much it for me, i could add something more but i will run out of space or it will be too empty so im not trying for now (i did it didnt i? doesnt matter, its not like i didnt want to lol)\"",
+        "n4c-desc": "\"quiza un sujeto tranquilo, estoy waton, me encantan los gatos (en especial milo, el que esta en mi foto de perfil) y me gustan rpgs y juegos de pelea en general, escucho cualquier cosa y soy bastante introvertido (creo que tengo ansiedad social), si me caes bien me apego MUCHO a ti y la verdad no me gustan mucho los deportes pero disfruto el basket, me encanta project moon (soy poser) y me gusta la fotografia, eso seria practicamente todo, podria meter algo mas por aca pero ocuparia mucho espacio o quedaria vacio asi que no lo intentare (lo hice igual no? bueno tampoco es como que no quisiera cffff)\"",
         "julibros-roles": "sprites, musica y algunas animaciones",
-        "julibros-desc": "\"basically a really creative guy that got the idea of producing games, and thanks to my friends an family that got into a dream come true, as my friends say im the \"leader\" so i give the ideas and general designs on the team, and make the youtube videos and stories too of course, i also make covers for fun and im trying to \"learn\" how to produce original tracks.\" n4c's observation: pretty cool but lazy guy, does his job but like 3 weeks after i requested it and is very helpful too, icl this guy can make sick beats but is way too lazy to do em, go follow the natunatic channel to show him support please, it would help us all, not just julibros.",
+        "julibros-desc": "\"Solo soy un chico creativo el cual tuvo una idea de producir videojuegos, y gracias a mi gente, ese sueño se hizo realidad. Según mis compañeros soy el \"Líder\" así que soy el que suele dar las ideas, diseños, historias y los videos del canal de Youtube. También suelo producir covers tontitos por diversión e \"Intento\" aprender a producir música Original. \" punto de vista de n4c de relleno: buen sujeto pero flojo, le pido cosas y las da 3 semanas despues, hace buenos beats y mas, suscribanse al canal de natunatic para mostrar apoyo, no solo a julibros si no a todo el equipo porfavor.",
         "aaron-roles": "programador frontend (aun no), animador, sprites",
         "aaron-desc": "\"im a sonic fan, i like drawing and i help people when i can without expecting anything in exchange, i like exotic[butters] animals like hedgehogs and bunnies and i like mental stability.\"\nn4c-s pov as a filler: pretty chill guy, likes pretty good things and is a very good friend of ours, has a lot of animals and is a sega enjoyer, not just sonic, has a lot of funko pops but haves a barely functional pc and enjoys rock, this guy also owns a ukulele (knows how to play it very good), pretty cool guy but kinda dumb sometimes, but does lots of cool things, we tryna get him to be a composer and producer but doesnt want too because he doesnt know how to supposedly lol",
         "special-thx": "muchas gracias a estas personas que no aportaron necesariamente, pero las apreciamos:",
@@ -29,5 +29,14 @@
         "jeanl3": "elogio esto",
         "jeanl4": "<div></div>de arriba",
         "jeanl5": "tqm ermano -n4c"
+    },
+    "artbook": {
+        "wip": "el artbook aun esta siendo trabajado",
+        "texty1": "asi como dije antes, la pagina aun no esta completa",
+        "texty2": "pero el artbook estara listo apenas tengamos un par de cosas listas en un servidor ;)",
+        "sog-text": "ten un wide soggy en su lugar"
+    },
+    "projects": {
+        "textpick": "Elige uno"
     }
 }
