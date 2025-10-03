@@ -71,13 +71,14 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
     <div id="team">
       <div class="small-spacing"></div>
       <div class="small-spacing"></div>
+      <!-- team section down here -->
       <h2>${i18n.t('main-page.sure')}</h2>
       <h3>${i18n.t('main-page.team-d')}</h3>
       <h5 id="something1">${i18n.t('main-page.advice-click')}</h5>
       <div class="small-spacing"></div>
       <div id="members">
         <div class="person" id="julibros" onclick="window.location.href='https://www.youtube.com/@Julibros'">
-          <img src="https://yt3.googleusercontent.com/7JKyQh4oumdOajuJWY0ADyCu_nPZfkrzZs7fusHPV2-zkCJ6mpP7u-vFxBXMemwS7xSwnYKt=s160-c-k-c0x00ffffff-no-rj" alt="n4c" class="pfp"/>
+          <img src="https://yt3.googleusercontent.com/7JKyQh4oumdOajuJWY0ADyCu_nPZfkrzZs7fusHPV2-zkCJ6mpP7u-vFxBXMemwS7xSwnYKt=s160-c-k-c0x00ffffff-no-rj" alt="julibros" class="pfp"/>
           <p></p>
           <span class="member-name">Julibros</span>
           <p></p>
@@ -95,7 +96,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
           <span class="member-desc">${i18n.t('main-page.n4c-desc')}</span>
         </div>
         <div class="person" id="aaron" onclick="window.location.href='https://www.youtube.com/@Elmisterio123xd'">
-          <img src="https://yt3.googleusercontent.com/MwMib2f-QoKLiguzYLLDqVgqU9pgTBcYY43nSJLepSldVe9rrt3e6lmhHSb3fDCGkYWJOV4q8A=s160-c-k-c0x00ffffff-no-rj" alt="n4c" class="pfp"/>
+          <img src="https://yt3.googleusercontent.com/bGt05RlLLa9SrQpfev9BlfXO7UPqJJS9rpe4SfnkkNECQDGHJimK7WxRcw6f6A8dD-KUkk9WPQ=s160-c-k-c0x00ffffff-no-rj" alt="aaron" class="pfp"/>
           <p></p>
           <span class="member-name">Elmisterio123x</span>
           <p></p>
