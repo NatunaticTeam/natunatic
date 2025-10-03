@@ -1,1 +1,8 @@
-[]
+file:
+../assets/artbook/art.png
+desc:
+first art!
+author:
+Julibros
+date:
+02/10/25

@@ -3,26 +3,27 @@ import './styles/artbook.css';
 import soggy from './assets/soggycat.webp';
 import i18n from './localization';
 
-async function fetchTextFile(url:string) {
+async function readTextFile(url: string): Promise<void> {
   try {
     const response = await fetch(url);
 
-    if (!response.ok) { // Check if the HTTP status code indicates success (e.g., 200 OK)
-      throw new Error(`HTTP error! status: ${response.status}`);
+    if (!response.ok) {
+      throw new Error(`http error, status: ${response.status}`);
     }
 
-    const fileContent = await response.text(); // Get the response body as text
-    console.debug("File Content:", fileContent);
-    return fileContent;
+    const textContent = await response.text();
+    const lines = textContent.split(/\r?\n/);
 
+    for (const line of lines) {
+      console.log(line);
+    }
   } catch (error) {
-    console.error("Error fetching file:", error);
-    return null;
+    console.error("oh no error!!!!!!! here:", error);
   }
 }
 
-// Example usage:
-fetchTextFile("");
+readTextFile('https://raw.githubusercontent.com/NatunaticTeam/natunatic/refs/heads/main/src/artbook/art1.txt');
+
 
 document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
     <h1>${i18n.t('artbook.wip')}</h1>
