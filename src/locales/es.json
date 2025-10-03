@@ -37,6 +37,30 @@
         "sog-text": "ten un wide soggy en su lugar"
     },
     "projects": {
-        "textpick": "Elige uno"
+        "textpick": "Elige uno",
+        "br": {
+            "title": "BounceRing",
+            "desc": "hola"
+        },
+        "at": {
+            "title": "Animal Tower",
+            "desc": "hola2"
+        },
+        "iv": {
+            "title": "Introverse",
+            "desc": "hola3"
+        },
+        "pt": {
+            "title": "PvZ: Pizza Time!",
+            "desc": "hola4"
+        },
+        "ca": {
+            "title": "Candance Adventure",
+            "desc": "hola5"
+        },
+        "wip": {
+            "title": "uy! no lo encontramos",
+            "desc": "aun no esta terminado! pero puedes revisar los otros de mientras :p"
+        }
     }
 }

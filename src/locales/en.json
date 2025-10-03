@@ -37,6 +37,30 @@
         "sog-text":"have a wide soggy instead"
     },
     "projects": {
-        "textpick": "Pick one"
+        "textpick": "Pick one",
+        "br": {
+            "title": "BounceRing",
+            "desc": "hello"
+        },
+        "at": {
+            "title": "Animal Tower",
+            "desc": "hello2"
+        },
+        "iv": {
+            "title": "Introverse",
+            "desc": "hello3"
+        },
+        "pt": {
+            "title": "PvZ: Pizza Time!",
+            "desc": "hello4"
+        },
+        "ca": {
+            "title": "Candance Adventure",
+            "desc": "hello5"
+        },
+        "wip": {
+            "title": "oops! not found",
+            "desc": "still not done! check the ones that we already made meanwhile :p"
+        }
     }
 }

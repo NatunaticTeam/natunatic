@@ -141,6 +141,18 @@ const candanceContent = `
         <a class="pjlist-element" href="projects?game=${mainPage.pt}">PvZ: Pizza Time!</a>
     </div>
 `;
+
+const wip = `
+    <div>
+        <h1></h1>
+        <h5></h5>
+        <a class="pjlist-element" href="projects?game=${mainPage.br}">BounceRing</a>
+        <a class="pjlist-element" href="projects?game=${mainPage.at}">Animal Tower</a>
+        <a class="pjlist-element" href="projects?game=${mainPage.iv}">Introverse</a>
+        <a class="pjlist-element" href="projects?game=${mainPage.pt}">PvZ: Pizza Time!</a>
+        <a class="pjlist-element" href="projects?game=${mainPage.ca}">Candance Adventure</a>
+    </div>
+`;
 //#endregion
 
 
@@ -254,3 +266,13 @@ candanceCard.addEventListener('click', () => {
     bounceringCard.style.display = "none";
 })
 //#endregion
+
+export default {
+    defaultContent,
+    bounceringContent,
+    animaltowerContent,
+    introverseContent,
+    pvzptContent,
+    candanceContent,
+    wip
+};
