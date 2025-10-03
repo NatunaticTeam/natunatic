@@ -1,4 +1,4 @@
-import './style.css'
+import './styles/style.css'
 import './styles/artbook.css'
 import soggy from './assets/soggycat.webp'
 import i18n from './localization';

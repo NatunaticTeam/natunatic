@@ -1,4 +1,4 @@
-import './style.css';
+import './styles/style.css';
 import './styles/team.css';
 import _n4cPfp from './assets/n4c.jpg';
 import _julibrosPfp from './assets/julibros.jpg';
@@ -133,7 +133,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
 `;
 
 const esLangBtn = document.getElementById('lang-es') as HTMLAnchorElement;
-const esCLangBtn = document.getElementById('lang-escl') as HTMLAnchorElement;
+// const esCLangBtn = document.getElementById('lang-escl') as HTMLAnchorElement;
 const enLangBtn = document.getElementById('lang-en') as HTMLAnchorElement;
 
 esLangBtn.addEventListener('click', () => {

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('./assets/JetBrainsMono[wght].ttf');
+  src: url('./assets/jbmono.ttf') format('truetype');
 }
 
 :root {
