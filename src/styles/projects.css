@@ -15,6 +15,7 @@
 
 :root {
   animation: fadein 0.3s;
+  overflow-x: hidden;
 }
 
 #content {
@@ -100,17 +101,20 @@
 #luau-lang-logo {
   margin-left: 2.5rem;
 }
-#bouncering {
+#bounceringCard {
   background-color: #aaffff;
 }
-#animaltower {
+#animaltowerCard {
   background-color: #32b132;
 }
-#introverse {
+#introverseCard {
   background-color: #ff0000;
 }
-#pvzmod {
+#pvzmodCard {
   background-color: #eeee66;
+}
+#candanceCard {
+  background-color: #ff9900;
 }
 #pvzptcardName {
   margin-top: -1.5rem;
@@ -129,25 +133,22 @@
 #bounceringcardName {
   margin-right: 1rem;
 }
-#candance {
-  background-color: #ff9900;
-}
-#bouncering:hover {
+#bounceringCard:hover {
   cursor: pointer;
 }
-#animaltower:hover {
+#animaltowerCard:hover {
   cursor: pointer;
 }
-#introverse:hover {
+#introverseCard:hover {
   cursor: pointer;
 }
-#pvzmod:hover {
+#pvzmodCard:hover {
   cursor: pointer;
 }
-#candance:hover {
+#candanceCard:hover {
   cursor: pointer;
 }
-#candance:hover + #candancecardName {
+#candanceCard:hover + #candancecardName {
   font-size: 10px;
 }
 
@@ -166,7 +167,22 @@
   height: 3rem;
 }
 
+.gamepage-background {
+  content: "";
+  position: absolute;
+  background: url('../assets/background.jpeg') no-repeat;
+  background-size: cover;
+  width: 1600px;
+  margin-left: -40%;
+  height: 500px;
+  z-index: -1;
+  transform: rotateZ(4deg);
+}
 
+.gamepage-title {
+  font-size: 4rem;
+  padding-top: 7rem;
+}
 
 /* animations */
 @keyframes scaleCard {
