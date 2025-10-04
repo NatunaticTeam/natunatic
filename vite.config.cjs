@@ -3,6 +3,7 @@ import resolve from 'path';
 const { defineConfig } = require('vite')
 
 module.exports = defineConfig({
+    root: './',
     build: {
         rollupOptions: {
             input: {
@@ -12,4 +13,5 @@ module.exports = defineConfig({
             }
         }
     },
+    publicDir: '/public/',
 })

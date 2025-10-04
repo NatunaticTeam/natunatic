@@ -4,7 +4,7 @@ import soggy from './assets/soggycat.webp';
 import i18n from './localization';
 
 var textContent:string = ''
-var line
+var line;
 
 async function readTextFile(url: string): Promise<void> {
   try {
@@ -18,20 +18,20 @@ async function readTextFile(url: string): Promise<void> {
     const lines = textContent.split(/\r?\n/);
     const newImage:HTMLDivElement = document.createElement('div');
     newImage.classList.add('art');
-    document.querySelector<HTMLDivElement>('#content')!.append(newImage)
+    document.querySelector<HTMLDivElement>('#content')!.append(newImage);
 
     // this is hilarious, im so ass at coding i had to do ts :sob:
     for (line of lines) {
         console.debug(line);
-        const newline:HTMLAnchorElement = document.createElement('a')
-        newline.classList.add('something')
+        const newline:HTMLAnchorElement = document.createElement('a');
+        newline.classList.add('something');
         if (line.trim() == 'file:')
         { 
-            console.debug("matching string ig")
-            const image:HTMLImageElement = document.createElement('img')
+            console.debug("matching string ig");
+            const image:HTMLImageElement = document.createElement('img');
             image.src = lines[2];
-            image.classList.add('artImage')
-            document.querySelector<HTMLDivElement>('.art')!.append(image)
+            image.classList.add('artImage');
+            document.querySelector<HTMLDivElement>('.art')!.append(image);
         }
         else if (line.trim() == 'desc')
         {
