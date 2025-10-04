@@ -32,10 +32,22 @@ async function readTextFile(url: string): Promise<void> {
             image.src = lines[2];
             image.classList.add('artImage');
             document.querySelector<HTMLDivElement>('.art')!.append(image);
-        }
-        else if (line.trim() == 'desc')
-        {
-
+            document.querySelector<HTMLDivElement>('.art')!.append(document.createElement('p'));
+            const desc:HTMLSpanElement = document.createElement('span');
+            desc.textContent = lines[4];
+            desc.classList.add('imageDesc');
+            document.querySelector<HTMLDivElement>('.art')!.append(desc);
+            document.querySelector<HTMLDivElement>('.art')!.append(document.createElement('p'));
+            const author:HTMLSpanElement = document.createElement('span');
+            author.textContent = lines[6];
+            author.classList.add('imageAuthor');
+            document.querySelector<HTMLDivElement>('.art')!.append(author);
+            document.querySelector<HTMLDivElement>('.art')!.append(document.createElement('p'));
+            const date:HTMLSpanElement = document.createElement('span');
+            date.textContent = 'at: ' + lines[8];
+            date.classList.add('imageDate');
+            document.querySelector<HTMLDivElement>('.art')!.append(date);
+            document.querySelector<HTMLDivElement>('.art')!.append(document.createElement('p'));
         }
     }
   } catch (error) {
