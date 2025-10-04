@@ -29,7 +29,7 @@ async function readTextFile(url: string): Promise<void> {
         { 
             console.debug("matching string ig")
             const image:HTMLImageElement = document.createElement('img')
-            image.src = lines[1];
+            image.src = lines[2];
             image.classList.add('artImage')
             document.querySelector<HTMLDivElement>('.art')!.append(image)
         }
