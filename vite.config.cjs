@@ -5,6 +5,7 @@ const { defineConfig } = require('vite')
 module.exports = defineConfig({
     root: './',
     build: {
+        outDir: 'dist',
         rollupOptions: {
             input: {
                 main: resolve.resolve(__dirname, 'index.html'),
@@ -13,5 +14,5 @@ module.exports = defineConfig({
             }
         }
     },
-    publicDir: '/public/',
+    base: '/public/'
 })

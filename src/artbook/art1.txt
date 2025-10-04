@@ -1,6 +1,6 @@
 [test1]
 file:
-/public/artbook/art1.png
+/artbook/art1.png
 desc:
 first art!
 author:
