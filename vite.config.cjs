@@ -10,7 +10,8 @@ module.exports = defineConfig({
             input: {
                 main: resolve.resolve(__dirname, 'index.html'),
                 artbook: resolve.resolve(__dirname, 'artbook.html'),
-                projects: resolve.resolve(__dirname, 'projects.html')
+                projects: resolve.resolve(__dirname, 'projects.html'),
+                tareas: resolve.resolve(__dirname, 'tareas.html')
             }
         }
     },

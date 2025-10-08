@@ -2,7 +2,7 @@
 file:
 /artbook/art1.png
 desc:
-first art!
+1st art, just for testing, also the page favicon lol
 author:
 Julibros
 date:

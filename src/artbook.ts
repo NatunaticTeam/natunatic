@@ -1,8 +1,7 @@
 import './styles/style.css';
 import './styles/artbook.css';
-import soggy from './assets/soggycat.webp';
-import i18n from './localization';
 
+var artId = 1;
 var textContent:string = ''
 var line;
 
@@ -18,8 +17,9 @@ async function readTextFile(url: string): Promise<void> {
     const lines = textContent.split(/\r?\n/);
     const newImage:HTMLDivElement = document.createElement('div');
     newImage.classList.add('art');
+    newImage.id = 'art'+artId+lines[0];
     document.querySelector<HTMLDivElement>('#content')!.append(newImage);
-
+    
     // this is hilarious, im so ass at coding i had to do ts :sob:
     for (line of lines) {
         console.debug(line);
@@ -59,11 +59,4 @@ async function readTextFile(url: string): Promise<void> {
 readTextFile('https://raw.githubusercontent.com/NatunaticTeam/natunatic/refs/heads/main/src/artbook/art1.txt');
 
 document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
-    <h1>${i18n.t('artbook.wip')}</h1>
-    <h4>${i18n.t('artbook.texty2')}</h6>
-    <h6>${i18n.t('artbook.texty2')}</h4>
-    <h6>${i18n.t('artbook.sog-text')}</h6>
-    <img src="${soggy}" alt="here! have WIDE soggy in the meantime" id="soggycat">
-    <div class="spacing"></div>
-    
 `;
