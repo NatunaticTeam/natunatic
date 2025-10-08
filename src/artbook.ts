@@ -1,7 +1,6 @@
 import './styles/style.css';
 import './styles/artbook.css';
 
-var artId = 1;
 var textContent:string = ''
 var line;
 
@@ -17,7 +16,7 @@ async function readTextFile(url: string): Promise<void> {
     const lines = textContent.split(/\r?\n/);
     const newImage:HTMLDivElement = document.createElement('div');
     newImage.classList.add('art');
-    newImage.id = 'art'+artId+lines[0];
+    newImage.id = 'art'+lines[0];
     document.querySelector<HTMLDivElement>('#content')!.append(newImage);
     
     // this is hilarious, im so ass at coding i had to do ts :sob:
@@ -27,27 +26,26 @@ async function readTextFile(url: string): Promise<void> {
         newline.classList.add('something');
         if (line.trim() == 'file:')
         { 
-            console.debug("matching string ig");
             const image:HTMLImageElement = document.createElement('img');
             image.src = lines[2];
             image.classList.add('artImage');
-            document.querySelector<HTMLDivElement>('.art')!.append(image);
-            document.querySelector<HTMLDivElement>('.art')!.append(document.createElement('p'));
+            document.getElementById('art'+lines[0])!.append(image);
+            document.getElementById('art'+lines[0])!.append(document.createElement('p'));
             const desc:HTMLSpanElement = document.createElement('span');
             desc.textContent = lines[4];
             desc.classList.add('imageDesc');
-            document.querySelector<HTMLDivElement>('.art')!.append(desc);
-            document.querySelector<HTMLDivElement>('.art')!.append(document.createElement('p'));
+            document.getElementById('art'+lines[0])!.append(desc);
+            document.getElementById('art'+lines[0])!.append(document.createElement('p'));
             const author:HTMLSpanElement = document.createElement('span');
             author.textContent = lines[6];
             author.classList.add('imageAuthor');
-            document.querySelector<HTMLDivElement>('.art')!.append(author);
-            document.querySelector<HTMLDivElement>('.art')!.append(document.createElement('p'));
+            document.getElementById('art'+lines[0])!.append(author);
+            document.getElementById('art'+lines[0])!.append(document.createElement('p'));
             const date:HTMLSpanElement = document.createElement('span');
             date.textContent = 'at: ' + lines[8];
             date.classList.add('imageDate');
-            document.querySelector<HTMLDivElement>('.art')!.append(date);
-            document.querySelector<HTMLDivElement>('.art')!.append(document.createElement('p'));
+            document.getElementById('art'+lines[0])!.append(date);
+            document.getElementById('art'+lines[0])!.append(document.createElement('p'));
         }
     }
   } catch (error) {
@@ -57,6 +55,7 @@ async function readTextFile(url: string): Promise<void> {
 
 // this is very crappy and slow and stuff, but it works and im not enough of a programmer to make this better, sorry.
 readTextFile('https://raw.githubusercontent.com/NatunaticTeam/natunatic/refs/heads/main/src/artbook/art1.txt');
+readTextFile('https://raw.githubusercontent.com/NatunaticTeam/natunatic/refs/heads/main/src/artbook/art2.txt');
 
 document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
 `;
