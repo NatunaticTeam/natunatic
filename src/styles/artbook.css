@@ -1,8 +1,3 @@
-#soggycat {
-    width: 500px;
-    height: 100px;
-}
-
 #content {
   place-self: center;
   max-width: 1280px;
@@ -12,9 +7,12 @@
 }
 
 .art {
+  margin-top: 30%;
   display: flex;
   max-width: 200px;
   max-height: 200px;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .artImage {
