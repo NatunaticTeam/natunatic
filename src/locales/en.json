@@ -1,10 +1,11 @@
 {
+    "under-construction": "undone!",
     "header": {
         "index": "index",
         "team": "team",
         "artbook": "artbook",
         "projects": "projects",
-        "languages": "languages (new!)",
+        "languages": "languages (exp.)",
         "language-list": {
             "en": "english",
             "es": "spanish",
@@ -24,11 +25,16 @@
         "aaron-roles": "frontend programmer (not yet), animator, sprites",
         "aaron-desc": "\"im a sonic fan, i like drawing and i help people when i can without expecting anything in exchange, i like exotic[butters] animals like hedgehogs and bunnies and i like mental stability.\"\nn4c-s pov as a filler: pretty chill guy, likes pretty good things and is a very good friend of ours, has a lot of animals and is a sega enjoyer, not just sonic, has a lot of funko pops but haves a barely functional pc and enjoys rock, this guy also owns a ukulele (knows how to play it very good), pretty cool guy but kinda dumb sometimes, but does lots of cool things, we tryna get him to be a composer and producer but doesnt want too because he doesnt know how to supposedly lol",
         "special-thx": "special thanks to people that didnt necessarily collaborate or something, but we appreciate:",
-        "jeanl1": "jeany beany",
-        "jeanl2": "umm yeah he cool",
-        "jeanl3": "complimented the thing",
-        "jeanl4": "above this",
-        "jeanl5": "love you twin -n4c"
+        "jean": {
+            "jeanl1": "jeany beany",
+            "jeanl2": "cool<div></div>",
+            "jeanl3": "liked the page<div></div>",
+            "jeanl4": "much love",
+            "jeanl5": "✌️ -n4c"
+        },
+        "isa": {
+            "desc": ""
+        }
     },
     "artbook": {
         "wip": "artbook is still a wip!",

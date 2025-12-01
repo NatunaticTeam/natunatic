@@ -51,6 +51,20 @@
 
   transform: scale(1.1);
 }
+#isas-frame {
+  animation: none;
+  background-image: linear-gradient(0deg, #fceaee, #f588ab);
+}
+#isas-frame:hover {
+  /*background-image: linear-gradient(0deg, #f588ab, #fceaee);*/
+  animation: none;
+  border: #f588ab;
+}
+#isas-censored-text {
+  color: #000000;
+  background-color: #000000;
+  cursor: pointer;
+}
 .pfp {
   padding-top: 10px;
   width: 3rem;
@@ -355,6 +369,52 @@
 }
 
 @keyframes generic-bg-in {
+  100% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
+  18% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
+  17% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
+  16% { background-image: linear-gradient(0deg, #111111ff, #888888ff) }
+  15% { background-image: linear-gradient(0deg, #111111ff, #888888ff) }
+  14% { background-image: linear-gradient(0deg, #222222ff, #777777ff) }
+  13% { background-image: linear-gradient(0deg, #222222ff, #777777ff) }
+  12% { background-image: linear-gradient(0deg, #333333ff, #666666ff) }
+  11% { background-image: linear-gradient(0deg, #333333ff, #666666ff) }
+  10% { background-image: linear-gradient(0deg, #444444ff, #555555ff) }
+  9% { background-image: linear-gradient(0deg, #444444ff, #555555ff) }
+  8% { background-image: linear-gradient(0deg, #555555ff, #444444ff) }
+  7% { background-image: linear-gradient(0deg, #555555ff, #444444ff) }
+  6% { background-image: linear-gradient(0deg, #666666ff, #333333ff) }
+  5% { background-image: linear-gradient(0deg, #666666ff, #333333ff) }
+  4% { background-image: linear-gradient(0deg, #777777ff, #222222ff) }
+  3% { background-image: linear-gradient(0deg, #777777ff, #222222ff) }
+  2% { background-image: linear-gradient(0deg, #888888ff, #111111ff) }
+  1% { background-image: linear-gradient(0deg, #888888ff, #111111ff) }
+  0% { background-image: linear-gradient(0deg, #999999ff, #000000ff) }
+}
+
+@keyframes isas-bg-out {
+  0% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
+  1% { background-image: linear-gradient(0deg, #111111ff, #888888ff) }
+  2% { background-image: linear-gradient(0deg, #111111ff, #888888ff) }
+  3% { background-image: linear-gradient(0deg, #222222ff, #777777ff) }
+  4% { background-image: linear-gradient(0deg, #222222ff, #777777ff) }
+  5% { background-image: linear-gradient(0deg, #333333ff, #666666ff) }
+  6% { background-image: linear-gradient(0deg, #333333ff, #666666ff) }
+  7% { background-image: linear-gradient(0deg, #444444ff, #555555ff) }
+  8% { background-image: linear-gradient(0deg, #444444ff, #555555ff) }
+  9% { background-image: linear-gradient(0deg, #555555ff, #444444ff) }
+  10% { background-image: linear-gradient(0deg, #555555ff, #444444ff) }
+  11% { background-image: linear-gradient(0deg, #666666ff, #333333ff) }
+  12% { background-image: linear-gradient(0deg, #666666ff, #333333ff) }
+  13% { background-image: linear-gradient(0deg, #777777ff, #222222ff) }
+  14% { background-image: linear-gradient(0deg, #777777ff, #222222ff) }
+  15% { background-image: linear-gradient(0deg, #888888ff, #111111ff) }
+  16% { background-image: linear-gradient(0deg, #888888ff, #111111ff) }
+  17% { background-image: linear-gradient(0deg, #999999ff, #000000ff) }
+  18% { background-image: linear-gradient(0deg, #999999ff, #000000ff) }
+  100% { background-image: linear-gradient(0deg, #999999ff, #000000ff) }
+}
+
+@keyframes isas-bg-in {
   100% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
   18% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }
   17% { background-image: linear-gradient(0deg, #000000ff, #999999ff) }

@@ -1,10 +1,11 @@
 {
+    "under-construction": "bajo arreglos!",
     "header": {
         "index": "indice",
         "team": "equipo",
         "artbook": "artbook",
         "projects": "proyectos",
-        "languages": "idiomas (nuevo!)",
+        "languages": "idiomas (exp.)",
         "language-list": {
             "en": "ingles",
             "es": "español",
@@ -22,13 +23,18 @@
         "julibros-roles": "sprites, musica y algunas animaciones",
         "julibros-desc": "\"Solo soy un chico creativo el cual tuvo una idea de producir videojuegos, y gracias a mi gente, ese sueño se hizo realidad. Según mis compañeros soy el \"Líder\" así que soy el que suele dar las ideas, diseños, historias y los videos del canal de Youtube. También suelo producir covers tontitos por diversión e \"Intento\" aprender a producir música Original. \" punto de vista de n4c de relleno: buen sujeto pero flojo, le pido cosas y las da 3 semanas despues, hace buenos beats y mas, suscribanse al canal de natunatic para mostrar apoyo, no solo a julibros si no a todo el equipo porfavor.",
         "aaron-roles": "programador frontend (aun no), animador, sprites",
-        "aaron-desc": "\"im a sonic fan, i like drawing and i help people when i can without expecting anything in exchange, i like exotic[butters] animals like hedgehogs and bunnies and i like mental stability.\"\nn4c-s pov as a filler: pretty chill guy, likes pretty good things and is a very good friend of ours, has a lot of animals and is a sega enjoyer, not just sonic, has a lot of funko pops but haves a barely functional pc and enjoys rock, this guy also owns a ukulele (knows how to play it very good), pretty cool guy but kinda dumb sometimes, but does lots of cool things, we tryna get him to be a composer and producer but doesnt want too because he doesnt know how to supposedly lol",
+        "aaron-desc": "\"fan de sonic, me gusta dibujar y ayudo gente cuando pueda y sea necesario, sin esperar nada a cambio, me gustan los animales \"exoticos\" como los erizos y conejos y me gusta la salud mental.\"\npunto de vista de n4c de relleno: piola, buen amigo y tiene buen gusto, tiene muchos animales y le encanta sega, montonazo de funko pops pero su pc no funciona, tambien tiene un ukelele, en cortas palabras un buen sujeto con episodios idiotas, queremos que haga cosas productivas como componer y asi pero segun el \"no da\" (solo es extremadamente flojo o su hermano pequeño no lo deja hacer otras cosas)",
         "special-thx": "muchas gracias a estas personas que no aportaron necesariamente, pero las apreciamos:",
-        "jeanl1": "jeany beany",
-        "jeanl2": "ehhh alguien genial",
-        "jeanl3": "elogio esto",
-        "jeanl4": "<div></div>de arriba",
-        "jeanl5": "tqm ermano -n4c"
+        "jean": {
+            "jeanl1": "jeany beany",
+            "jeanl2": "es genial<div></div>",
+            "jeanl3": "le gusto la pagina<div></div>",
+            "jeanl4": "muchos abrazos",
+            "jeanl5": "de parte mia -n4c"
+        },
+        "isa": {
+            "desc": "una chica muy linda que quiero mucho muchito y ojala vea esto<span id=\"isas-censored-text\"> y lo aprecie por que se lo dedico con mucho amor </span>:3"
+        }
     },
     "projects": {
         "textpick": "Elige uno",

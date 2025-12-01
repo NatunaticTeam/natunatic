@@ -207,7 +207,7 @@ if (game === null) {
     })
     animaltowerCard.addEventListener('click', () => {
         console.debug("clicked animaltower");
-        chooseNewPage('wip');
+        chooseNewPage('animaltower');
         animaltowerCard.style.animation = "scaleCard 5s";
         bounceringCard.style.display = "none";
         introverseCard.style.display = "none";
@@ -216,7 +216,7 @@ if (game === null) {
     })
     introverseCard.addEventListener('click', () => {
         console.debug("clicked introverse");
-        chooseNewPage('wip');
+        chooseNewPage('introverse');
         introverseCard.style.animation = "scaleCard 5s";
         animaltowerCard.style.display = "none";
         bounceringCard.style.display = "none";
@@ -225,7 +225,7 @@ if (game === null) {
     })
     pvzptCard.addEventListener('click', () => {
         console.debug("clicked pvzmod");
-        chooseNewPage('wip');
+        chooseNewPage('pvzpt');
         pvzptCard.style.animation = "scaleCard 5s";
         animaltowerCard.style.display = "none";
         introverseCard.style.display = "none";
@@ -234,7 +234,7 @@ if (game === null) {
     })
     candanceCard.addEventListener('click', () => {
         console.debug("clicked candance");
-        chooseNewPage('wip');
+        chooseNewPage('candanceadventure');
         candanceCard.style.animation = "scaleCard 5s";
         animaltowerCard.style.display = "none";
         introverseCard.style.display = "none";

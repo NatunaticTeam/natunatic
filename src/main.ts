@@ -14,19 +14,16 @@ const ca:string = "CandanceAdventure".toLowerCase();
 document.cookie = "lang=en";
 
 var randomLink:number = Math.random()
-var randomTitle:number = Math.random()
-console.debug(randomLink)
-console.debug(randomTitle)
 var choosenLink:string = "https://natunatic.com"
 
 if (randomLink > 0.5)
 {
   choosenLink = "https://natunatic.com"
-  console.debug("natunatic webpage")
+  //console.debug("natunatic webpage")
 }
 else
 {
-  console.debug("natunatic yt channel")
+  //console.debug("natunatic yt channel")
   choosenLink = "https://www.youtube.com/@NATUNATIC_Official"
 }
 console.debug(choosenLink)
@@ -41,15 +38,18 @@ document.querySelector<HTMLDivElement>('#main')!.innerHTML = `
       <span>/</span>
       <a href=".">${i18n.t('header.index')}</a>
       <a href="./#team">${i18n.t('header.team')}</a>
-      <a href="artbook">${i18n.t('header.artbook')}</a>
+      <a class="disabled">${i18n.t('header.artbook')}</a>
       <div>
-        <a id="projects-button" href="projects">${i18n.t('header.projects')}</a>
-        <ul id="projects-list">
+        <a id="projects-button" class="disabled">${i18n.t('header.projects')}</a>
+        <!--<ul id="projects-list">
           <li><a class="pjlist-element" href="projects?game=${br}">BounceRing</a></li>
           <li><a class="pjlist-element" href="projects?game=${at}">AnimalTower</a></li>
           <li><a class="pjlist-element" href="projects?game=${iv}">Introverse</a></li>
           <li><a class="pjlist-element" href="projects?game=${pt}">PvZ P.T!</a></li>
           <li><a class="pjlist-element" href="projects?game=${ca}">Candance</a></li>
+        </ul>-->
+        <ul id="projects-list">
+          <li><span class="pjlist-element">${i18n.t('under-construction')}</span></li>
         </ul>
       </div>
       <div>
@@ -78,7 +78,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
       <div class="small-spacing"></div>
       <div id="members">
         <div class="person" id="julibros" onclick="window.location.href='https://www.youtube.com/@Julibros'">
-          <img src="https://yt3.googleusercontent.com/7JKyQh4oumdOajuJWY0ADyCu_nPZfkrzZs7fusHPV2-zkCJ6mpP7u-vFxBXMemwS7xSwnYKt=s160-c-k-c0x00ffffff-no-rj" alt="julibros" class="pfp"/>
+          <img src="${_julibrosPfp}" alt="julibros" class="pfp"/>
           <p></p>
           <span class="member-name">Julibros</span>
           <p></p>
@@ -87,7 +87,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
           <span class="member-desc">${i18n.t('main-page.julibros-desc')}</span>
         </div>
         <div class="person" id="n4c" onclick="window.location.href='https://www.youtube.com/@n4c-n'">
-          <img src="https://yt3.googleusercontent.com/1qE7CfOk4pRJMXAqBy8BaVWeUDL3Z__vhtyhoEyX80E_qUHt5oOD0VwS8R3b1f1vmB6q3Vkz=s160-c-k-c0x00ffffff-no-rj" alt="n4c" class="pfp"/>
+          <img src="${_n4cPfp}" alt="n4c" class="pfp"/>
           <p></p>
           <span class="member-name">n4c</span>
           <p></p>
@@ -96,7 +96,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
           <span class="member-desc">${i18n.t('main-page.n4c-desc')}</span>
         </div>
         <div class="person" id="aaron" onclick="window.location.href='https://www.youtube.com/@Elmisterio123xd'">
-          <img src="https://yt3.googleusercontent.com/bGt05RlLLa9SrQpfev9BlfXO7UPqJJS9rpe4SfnkkNECQDGHJimK7WxRcw6f6A8dD-KUkk9WPQ=s160-c-k-c0x00ffffff-no-rj" alt="aaron" class="pfp"/>
+          <img src="${_aaronPfp}" alt="aaron" class="pfp"/>
           <p></p>
           <span class="member-name">Elmisterio123x</span>
           <p></p>
@@ -112,20 +112,20 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
               <span class="member-name">jean</span>
               <p></p>
               <span class="member-desc">
-                ${i18n.t('main-page.jeanl1')}
+                ${i18n.t('main-page.jean.jeanl1')}
                 <div></div>
-                ${i18n.t('main-page.jeanl2')}, ${i18n.t('main-page.jeanl3')}, ${i18n.t('main-page.jeanl4')}
+                ${i18n.t('main-page.jean.jeanl2')} ${i18n.t('main-page.jean.jeanl3')} ${i18n.t('main-page.jean.jeanl4')}
                 <div></div>
-                ${i18n.t('main-page.jeanl5')}
+                ${i18n.t('main-page.jean.jeanl5')}
               </span>
             </div>
-            <div class="small-person hidden">
-              <span class="member-name">someone</span>
+            <!-- this ones dedicated to the person i care for the most in the world :3 -->
+            <div class="small-person hidden" id="isas-frame">
+              <!--<span class="member-name">isa</span>
               <p></p>
               <span class="member-desc">
-                a person that has helped me so much these days,
-                they arent reading this most prob, but i still wanted to say thanks -n4c
-              </span>
+                ${i18n.t('main-page.isa.desc')}
+              </span>-->
             </div>
           </div>
         </div>
@@ -136,6 +136,30 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
 const esLangBtn = document.getElementById('lang-es') as HTMLAnchorElement;
 // const esCLangBtn = document.getElementById('lang-escl') as HTMLAnchorElement;
 const enLangBtn = document.getElementById('lang-en') as HTMLAnchorElement;
+const isas_censored_text = document.getElementById('isas-censored-text') as HTMLSpanElement;
+let isastexthidden: boolean = true;
+
+/*isas_censored_text.addEventListener('click', () => {
+  if (isastexthidden == true) {
+    console.debug("didfalse")
+    isastexthidden = false;
+  }
+  else {
+    console.debug("didtrue")
+    isastexthidden = true;
+  }
+
+  if (isastexthidden == true) {
+    console.debug("istrue")
+    isas_censored_text.style.color = '#000000';
+    isas_censored_text.style.backgroundColor = '#000000';
+  }
+  else {
+    console.debug("isfalse")
+    isas_censored_text.style.color = '#ffffff';
+    isas_censored_text.style.backgroundColor = '#00000044';
+  }
+});*/
 
 esLangBtn.addEventListener('click', () => {
   i18n.changeLanguage('es').then(() => {
