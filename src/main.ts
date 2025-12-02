@@ -86,7 +86,7 @@ document.querySelector<HTMLDivElement>('#content')!.innerHTML = `
           <p></p>
           <span class="member-desc">${i18n.t('main-page.julibros-desc')}</span>
         </div>
-        <div class="person" id="n4c" onclick="window.location.href='https://www.youtube.com/@n4c-n'">
+        <div class="person" id="n4c" onclick="window.location.href='https://www.youtube.com/@sirBatterson'">
           <img src="${_n4cPfp}" alt="n4c" class="pfp"/>
           <p></p>
           <span class="member-name">n4c</span>
