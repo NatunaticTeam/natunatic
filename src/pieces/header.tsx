@@ -1,4 +1,4 @@
-import ProjectsComponent from '../components/header.tsx'
+// import ProjectsComponent from '../components/header.tsx'
 import '../styles/header.css'
 
 const randomLink:number = Math.random()
