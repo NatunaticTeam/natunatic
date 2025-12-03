@@ -1,5 +1,8 @@
-// import ProjectsComponent from '../components/header.tsx'
+//import ProjectsComponent from '../components/header.tsx'
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import '../styles/header.css'
+import PageArtbook from './artbook'
+import PageIndex from '.'
 
 const randomLink:number = Math.random()
 let choosenLink:string = "https://natunatic.com"
@@ -9,16 +12,15 @@ if (randomLink > 0.5)
 else
   choosenLink = "https://www.youtube.com/@NATUNATIC_Official"
 
-function MainHeader() {
+function App() {
   return (
-  <>
+  <BrowserRouter>
     <div>
       <div id="header-nav">
         <a href={choosenLink}>natunatic.com</a>
         <span>/</span>
-        <a href=".">index</a>
-        <a href="./#team">team</a>
-        <a href="artbook">artbook</a>
+        <Link to="/">index</Link>
+        <Link to="/artbook">artbook</Link>
         <div>
           <a id="projects-button" className="disabled">projects</a>
           {/*<ul id="projects-list">
@@ -37,8 +39,13 @@ function MainHeader() {
         </div>
       </div>
     </div>
-  </>
+
+    <Routes>
+      <Route path='/artbook' element={<PageArtbook />} />
+      <Route path='/' element={<PageIndex />} />
+    </Routes>
+  </BrowserRouter>
   )
 }
 
-export default MainHeader
+export default App

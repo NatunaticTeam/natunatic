@@ -1,13 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/index.css'
-import MainHeader from './pieces/header.tsx'
-import PageIndex from './pieces/index.tsx'
+import App from './pieces/app.tsx'
 
-createRoot(document.getElementById('main')!).render(
+const mainRoot = createRoot(document.getElementById('main')!)
+
+mainRoot.render(
   <StrictMode>
-    <MainHeader />
-    <PageIndex />
-  </StrictMode>,
+    {/* well this is actually the header file, but since here lies the router and stuff i call it app */}
+    <App />
+  </StrictMode>
 )
-

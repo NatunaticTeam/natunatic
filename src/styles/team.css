@@ -60,6 +60,9 @@
   animation: none;
   border: #f588ab;
 }
+#isas-frame .member-desc {
+  color: #222;
+}
 #isas-censored-text {
   color: #000000;
   background-color: #000000;
