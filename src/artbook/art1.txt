@@ -1,9 +1,0 @@
-test1
-file:
-/artbook/art1.png
-desc:
-1st art, just for testing, also the page favicon lol
-author:
-Julibros
-date:
-02/10/25
