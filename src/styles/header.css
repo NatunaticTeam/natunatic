@@ -1,0 +1,84 @@
+#header-nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #242424;
+  justify-content: center;
+}
+#header-nav a {
+  padding: 0 0.5rem;
+}
+#projects-button {
+  display: flex;
+}
+#projects-list {
+  list-style-type: none;
+  display: none;
+}
+
+#projects-button:hover + #projects-list {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  background-color: #242424;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0rem;
+}
+#projects-list:hover {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  background-color: #242424;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0rem;
+}
+.pjlist-element {
+  margin: 0.6rem 0.2rem;
+  padding: 0.2rem 0.7rem;
+}
+#languages-button {
+  display: flex;
+}
+#languages-list {
+  list-style-type: none;
+  display: none;
+}
+
+#languages-button:hover + #languages-list {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  background-color: #242424;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0rem;
+}
+#languages-list:hover {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+  background-color: #242424;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 0rem;
+}
+.langlist-element {
+  margin: 0.6rem 0.2rem;
+  padding: 0.2rem 0.7rem;
+}
+.disabled {
+    color: #cccccc;
+    text-decoration: line-through;
+}
+.disabled:hover {
+    color: #cccccc;
+}
