@@ -18,22 +18,19 @@ function MainHeader() {
         <span>/</span>
         <a href=".">index</a>
         <a href="./#team">team</a>
-        <a className="disabled">artbook</a>
+        <a href="artbook">artbook</a>
         <div>
           <a id="projects-button" className="disabled">projects</a>
           {/*<ul id="projects-list">
-            <li><a className="pjlist-element" href="projects?game={br}">BounceRing</a></li>
-            <li><a className="pjlist-element" href="projects?game={at}">AnimalTower</a></li>
-            <li><a className="pjlist-element" href="projects?game={iv}">Introverse</a></li>
-            <li><a className="pjlist-element" href="projects?game={pt}">PvZ P.T!</a></li>
-            <li><a className="pjlist-element" href="projects?game={ca}">Candance</a></li>
-            </ul>*/}
-          <ul id="projects-list">
-            <li><span className="pjlist-element">under construction</span></li>
-          </ul>
+            <ProjectsComponent content="BounceRing" reference='bouncering' />
+            <ProjectsComponent content="Animal Tower" reference='animaltower' />
+            <ProjectsComponent content="Introverse" reference='introverse' />
+            <ProjectsComponent content="PvZ: Pizza Time!" reference='pvzpt' />
+            <ProjectsComponent content="Candance Adventure" reference='candanceadventure' />
+          </ul>*/}
         </div>
         <div>
-          <a id="languages-button">languages (exp.)</a>
+          <a id="languages-button" className="disabled">languages</a>
           <ul id="languages-list">
             <li><a className="langlist-element" id="lang-en">unavailable at the moment</a></li>
           </ul>

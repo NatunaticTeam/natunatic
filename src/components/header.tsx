@@ -7,7 +7,7 @@ function ProjectsComponent(props: ProjectsComponentProps) {
   const goto = 'projects?game=' + props.reference
   return (
   <>
-    <li><a href={goto}>{props.content}</a></li>
+    <li><a href={goto} className="pjlist-element">{props.content}</a></li>
   </>
   )
 }
