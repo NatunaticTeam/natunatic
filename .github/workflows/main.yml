@@ -4,7 +4,7 @@ name: build react to static and deploy to gh pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['main']
+    branches: ['react-rewrite']
 
   schedule:
   - cron: "0 2 * * 1-5"
