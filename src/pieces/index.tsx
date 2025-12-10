@@ -33,7 +33,7 @@ function PageIndex()
           <div id="special-thanks-persons">
             <SpecialThanksCard name='jean' l1='jeany beany' l2='cool' l3='liked the page' l4='much love' l5='✌️ -n4c'/>
             {/* this ones dedicated to the person i care the most for -n4c */}
-            <SpecialThanksCard name='isa' l1='uhm' l2='i dont really know' l3='what to say about' l4='this one' l5='i love you -n4c' id='isas-frame'/>
+            <SpecialThanksCard name='isa' l1='uhm' l2='i dont really know' l3='what to say about this one' l4='without it feeling awkward' l5='i love you -n4c' id='isas-frame'/>
             </div>
           </div>
         </div>

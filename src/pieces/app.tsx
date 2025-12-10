@@ -1,16 +1,17 @@
-//import ProjectsComponent from '../components/header.tsx'
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
-import '../styles/header.css'
-import PageArtbook from './artbook'
-import PageIndex from '.'
+// import { ProjectsComponent, LanguagesComponent } from '../components/header.tsx';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import '../styles/header.css';
+import PageArtbook from './artbook';
+import PageIndex from '.';
 
-const randomLink:number = Math.random()
-let choosenLink:string = "https://natunatic.com"
+
+const randomLink:number = Math.random();
+let choosenLink:string = "https://natunatic.com";
 
 if (randomLink > 0.5)
-  choosenLink = "https://natunatic.com"
+  choosenLink = "https://natunatic.com";
 else
-  choosenLink = "https://www.youtube.com/@NATUNATIC_Official"
+  choosenLink = "https://www.youtube.com/@NATUNATIC_Official";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
         <Link to="/artbook">artbook</Link>
         <div>
           <a id="projects-button" className="disabled">projects</a>
-          {/*<ul id="projects-list">
+          {/*
+          <ul id="projects-list">
             <ProjectsComponent content="BounceRing" reference='bouncering' />
             <ProjectsComponent content="Animal Tower" reference='animaltower' />
             <ProjectsComponent content="Introverse" reference='introverse' />
@@ -32,10 +34,12 @@ function App() {
           </ul>*/}
         </div>
         <div>
-          <a id="languages-button" className="disabled">languages</a>
+          <a id="languages-button" className='disabled'>languages</a>
+          {/*
           <ul id="languages-list">
-            <li><a className="langlist-element" id="lang-en">unavailable at the moment</a></li>
-          </ul>
+            <LanguagesComponent lang='en' content='english'/>
+            <LanguagesComponent lang='es' content='spanish'/>
+          </ul>*/}
         </div>
       </div>
     </div>
@@ -45,7 +49,7 @@ function App() {
       <Route path='/' element={<PageIndex />} />
     </Routes>
   </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

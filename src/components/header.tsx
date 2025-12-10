@@ -3,7 +3,12 @@ type ProjectsComponentProps = {
   content: string
 }
 
-function ProjectsComponent(props: ProjectsComponentProps) {
+type LanguageComponentProps = {
+  lang: string,
+  content: string
+}
+
+export function ProjectsComponent(props: ProjectsComponentProps) {
   const goto = 'projects?game=' + props.reference
   return (
   <>
@@ -12,4 +17,11 @@ function ProjectsComponent(props: ProjectsComponentProps) {
   )
 }
 
-export default ProjectsComponent;
+export function LanguagesComponent(props: LanguageComponentProps)
+{
+  return (
+  <>
+    <li><a className="langlist-element" id={"lang-" + props.lang}>{props.content}</a></li>
+  </>
+  )
+}
